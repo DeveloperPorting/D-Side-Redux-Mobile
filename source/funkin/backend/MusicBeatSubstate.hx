@@ -8,6 +8,13 @@ import funkin.backend.PlayerSettings;
 import funkin.data.*;
 import funkin.scripts.*;
 
+#if mobile
+import flixel.FlxG;
+import flixel.group.FlxGroup;
+import mobile.controls.MobileVirtualPad;
+import mobile.controls.MobileHitbox;
+#end
+
 class MusicBeatSubstate extends FlxSubState
 {
 	public function new()
@@ -34,6 +41,82 @@ class MusicBeatSubstate extends FlxSubState
 	public var scriptName:String = '';
 	public var scriptPrefix:String = 'substates';
 	public var scriptGroup:ScriptGroup = new ScriptGroup();
+	
+	#if mobile
+	public var virtualPad:MobileVirtualPad;
+	public var virtualPadCam:FlxCamera;
+	
+	public var hitbox:MobileHitbox;
+	public var hitboxCam:FlxCamera;
+
+    public function addVirtualPad(DPad:MobileDPadMode, Action:MobileActionMode)
+	{
+		virtualPad = new MobileVirtualPad(DPad, Action);
+		add(virtualPad);
+	}
+	
+	public function addMobileControls(DefaultDrawTarget:Bool = false)
+	{
+		hitbox = new MobileHitbox();
+
+		hitboxCam = new FlxCamera();
+		hitboxCam.bgColor.alpha = 0;
+		FlxG.cameras.add(hitboxCam, DefaultDrawTarget);
+
+		hitbox.cameras = [hitboxCam];
+		hitbox.visible = false;
+		add(hitbox);
+	}
+	
+	public function addVirtualPadCamera(DefaultDrawTarget:Bool = false)
+	{
+		if (virtualPad != null)
+		{
+			virtualPadCam = new FlxCamera();
+			virtualPadCam.bgColor.alpha = 0;
+			FlxG.cameras.add(virtualPadCam, DefaultDrawTarget);
+			
+			virtualPad.cameras = [virtualPadCam];
+		}
+	}
+
+	public function removeVirtualPad()
+	{
+		if (virtualPad != null)
+		{
+			remove(virtualPad);
+			virtualPad = FlxDestroyUtil.destroy(virtualPad);
+		}
+
+		if(virtualPadCam != null)
+		{
+			FlxG.cameras.remove(virtualPadCam);
+			virtualPadCam = FlxDestroyUtil.destroy(virtualPadCam);
+		}
+	}
+	
+	public function removeMobileControls()
+	{
+		if (hitbox != null)
+		{
+			remove(hitbox);
+			hitbox = FlxDestroyUtil.destroy(hitbox);
+		}
+
+		if(hitboxCam != null)
+		{
+			FlxG.cameras.remove(hitboxCam);
+			hitboxCam = FlxDestroyUtil.destroy(hitboxCam);
+		}
+	}
+
+	override function destroy()
+    {
+        super.destroy();
+		removeVirtualPad();
+		removeMobileControls();
+	}
+	#end
 	
 	public function initStateScript(?scriptName:String, callOnLoad:Bool = true):Bool
 	{
