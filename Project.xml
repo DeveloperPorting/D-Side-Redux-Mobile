@@ -2,7 +2,7 @@
 <project>
     <!-- _________________________ Application Settings _________________________ -->
 
-    <app title="Friday Night Funkin" file="Friday Night Funkin" packageName="com.nmvTeam.nightmareEngine" package="com.nmvTeam.nightmareEngine" main="Main" version="0.2.7" company="nmvTeam" />
+    <app title="FNF: D-Side Redux" file="D-Side Redux" packageName="com.dsideTeam.dSideRedux" package="com.dsideTeam.dSideRedux" main="Main" version="0.2.7" company="dsideTeam" />
 
     <!--Switch Export with Unique ApplicationID and Icon-->
     <set name="APP_ID" value="0x0100f6c013bbc000" />
@@ -199,5 +199,6 @@
     <icon path="projFiles/icon/icon16.png" size='16'/>
     <icon path="projFiles/icon/icon32.png" size='32'/>
     <icon path="projFiles/icon/icon64.png" size='64'/>
+    <icon path="projFiles/icon/icon128.png" size='128'/>
     <icon path="projFiles/icon/iconOG.png" />
 </project>
