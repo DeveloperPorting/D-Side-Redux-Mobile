@@ -77,8 +77,8 @@
     <haxelib name="flixel-animate"/>
     <haxelib name="moonchart"/>
 
-    <haxelib name="haxeui-core" />
-    <haxelib name="haxeui-flixel" />
+    <!-- haxelib name="haxeui-core" -->
+    <!-- haxelib name="haxeui-flixel" -->
 
     <haxelib name="funkin.vis"/>
     <haxelib name="grig.audio"/>
@@ -173,8 +173,6 @@
 
     <!--For haxe 4.3.0 and newer cleaner error reporting-->
     <haxedef name="message.reporting" value="pretty" />
-    
-    <haxedef name="no_file_dialogs" /> 
 
     <!--For haxe 4.3.0 and newer disables warnings-->
     <haxedef name="no-deprecation-warnings"/>
