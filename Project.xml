@@ -77,7 +77,7 @@
     <haxelib name="flixel-animate"/>
     <haxelib name="moonchart"/>
 
-    <!-- haxelib name="haxeui-core" -->
+    <haxelib name="haxeui-core" />
     <haxelib name="haxeui-flixel" />
 
     <haxelib name="funkin.vis"/>
