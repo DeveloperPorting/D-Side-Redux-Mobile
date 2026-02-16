@@ -78,7 +78,7 @@
     <haxelib name="moonchart"/>
 
     <!-- haxelib name="haxeui-core" -->
-    <!-- haxelib name="haxeui-flixel" -->
+    <haxelib name="haxeui-flixel" />
 
     <haxelib name="funkin.vis"/>
     <haxelib name="grig.audio"/>
