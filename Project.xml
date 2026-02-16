@@ -173,6 +173,8 @@
 
     <!--For haxe 4.3.0 and newer cleaner error reporting-->
     <haxedef name="message.reporting" value="pretty" />
+    
+    <haxedef name="no_file_dialogs" /> 
 
     <!--For haxe 4.3.0 and newer disables warnings-->
     <haxedef name="no-deprecation-warnings"/>
