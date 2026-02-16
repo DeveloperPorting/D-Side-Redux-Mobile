@@ -47,7 +47,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Nightmare-Android
+          name: DSideRedux-Android
           path: export/release/android/bin/app/build/outputs/apk/*
           if-no-files-found: error
 
