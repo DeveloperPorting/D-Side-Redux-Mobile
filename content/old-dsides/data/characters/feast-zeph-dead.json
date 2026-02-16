@@ -1,0 +1,56 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-190,
+				-4
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "gameoverloop"
+		},
+		{
+			"offsets": [
+				-115,
+				145
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "gameoverretry"
+		},
+		{
+			"offsets": [
+				-73,
+				283
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "mightygameover"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/feast/GodFeastMightyZIPGameOverSheet",
+	"position": [
+		-220,
+		0
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		228,
+		85,
+		216
+	],
+	"camera_position": [
+		30,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

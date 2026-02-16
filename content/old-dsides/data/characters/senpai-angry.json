@@ -1,0 +1,126 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				2,
+				0
+			],
+			"loop": false,
+			"anim": "idle",
+			"fps": 24,
+			"name": "Angry Senpai Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				44,
+				-185
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Angry Senpai DOWN NOTE0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				100,
+				30
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Angry Senpai RIGHT NOTE0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-25,
+				167
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Angry Senpai UP NOTE 0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-90,
+				60
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Angry Senpai LEFT NOTE 0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				170,
+				320
+			],
+			"anim": "singLEFT-F",
+			"fps": 24,
+			"name": "Angry Senpai LEFT NOTE ALT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				130,
+				303
+			],
+			"anim": "singRIGHT-F",
+			"fps": 24,
+			"name": "Angry Senpai RIGHT NOTE ALT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				130,
+				287
+			],
+			"anim": "singDOWN-F",
+			"fps": 24,
+			"name": "Angry Senpai DOWN NOTE ALT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				40,
+				290
+			],
+			"anim": "singUP-F",
+			"fps": 24,
+			"name": "Angry Senpai UP NOTE ALT0",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/senpai",
+	"position": [
+		710,
+		710
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "senpai-mad-pixel",
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -8108066,
+	"camera_position": [
+		-408,
+		-380
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 4,
+	"scale": 6,
+	"_editor_isPlayer": false
+}

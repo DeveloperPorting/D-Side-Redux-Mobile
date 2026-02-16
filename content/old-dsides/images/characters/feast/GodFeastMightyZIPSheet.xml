@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="GodFeastMightyZIPSheet.png" width="2954" height="2743">
+	<SubTexture name="MightyZipLeft0000" x="5" y="435" width="642" height="454" frameX="-0" frameY="-0" frameWidth="642" frameHeight="455"/>
+	<SubTexture name="MightyZipLeft0001" x="5" y="435" width="642" height="454" frameX="-0" frameY="-0" frameWidth="642" frameHeight="455"/>
+	<SubTexture name="MightyZipLeft0002" x="653" y="5" width="453" height="642" rotated="true" frameX="-0" frameY="-2" frameWidth="642" frameHeight="455"/>
+	<SubTexture name="MightyZipLeft0003" x="653" y="5" width="453" height="642" rotated="true" frameX="-0" frameY="-2" frameWidth="642" frameHeight="455"/>
+	<SubTexture name="MightyZipLeft0004" x="653" y="5" width="453" height="642" rotated="true" frameX="-0" frameY="-2" frameWidth="642" frameHeight="455"/>
+	<SubTexture name="MightyZipup0000" x="5" y="894" width="642" height="503" frameX="-0" frameY="-1" frameWidth="642" frameHeight="505"/>
+	<SubTexture name="MightyZipup0001" x="5" y="894" width="642" height="503" frameX="-0" frameY="-1" frameWidth="642" frameHeight="505"/>
+	<SubTexture name="MightyZipup0002" x="1111" y="5" width="496" height="642" rotated="true" frameX="-0" frameY="-8" frameWidth="642" frameHeight="505"/>
+	<SubTexture name="MightyZipup0003" x="1111" y="5" width="496" height="642" rotated="true" frameX="-0" frameY="-8" frameWidth="642" frameHeight="505"/>
+	<SubTexture name="MightyZipup0004" x="1111" y="5" width="496" height="642" rotated="true" frameX="-0" frameY="-8" frameWidth="642" frameHeight="505"/>
+	<SubTexture name="mighty.zipidle0000" x="652" y="652" width="438" height="642" rotated="true" frameX="-0" frameY="-6" frameWidth="642" frameHeight="445"/>
+	<SubTexture name="mighty.zipidle0001" x="1095" y="652" width="438" height="642" rotated="true" frameX="-0" frameY="-6" frameWidth="642" frameHeight="445"/>
+	<SubTexture name="mighty.zipidle0002" x="5" y="1402" width="642" height="444" frameX="-0" frameY="-0" frameWidth="642" frameHeight="445"/>
+	<SubTexture name="mighty.zipidle0003" x="652" y="1299" width="642" height="444" frameX="-0" frameY="-0" frameWidth="642" frameHeight="445"/>
+	<SubTexture name="mighty.zipidle0004" x="1612" y="5" width="444" height="642" rotated="true" frameX="-0" frameY="-0" frameWidth="642" frameHeight="445"/>
+	<SubTexture name="mighty.zipidle0005" x="1538" y="652" width="444" height="642" rotated="true" frameX="-0" frameY="-0" frameWidth="642" frameHeight="445"/>
+	<SubTexture name="mighty.zipidle0006" x="1299" y="1299" width="642" height="443" frameX="-0" frameY="-1" frameWidth="642" frameHeight="445"/>
+	<SubTexture name="mighty.zipidle0007" x="5" y="1851" width="642" height="443" frameX="-0" frameY="-1" frameWidth="642" frameHeight="445"/>
+	<SubTexture name="mighty.zipidle0008" x="652" y="1748" width="642" height="444" frameX="-0" frameY="-0" frameWidth="642" frameHeight="445"/>
+	<SubTexture name="mighty.zipidle0009" x="1299" y="1747" width="642" height="444" frameX="-0" frameY="-0" frameWidth="642" frameHeight="445"/>
+	<SubTexture name="mighty.zipidle0010" x="2061" y="5" width="444" height="642" rotated="true" frameX="-0" frameY="-0" frameWidth="642" frameHeight="445"/>
+	<SubTexture name="mighty.zipidle0011" x="652" y="1748" width="642" height="444" frameX="-0" frameY="-0" frameWidth="642" frameHeight="445"/>
+	<SubTexture name="mighty.zipidle0012" x="1299" y="1747" width="642" height="444" frameX="-0" frameY="-0" frameWidth="642" frameHeight="445"/>
+	<SubTexture name="mighty.zipidle0013" x="2061" y="5" width="444" height="642" rotated="true" frameX="-0" frameY="-0" frameWidth="642" frameHeight="445"/>
+	<SubTexture name="mightydownmiss0000" x="1987" y="652" width="418" height="642" rotated="true" frameX="-0" frameY="-2" frameWidth="643" frameHeight="425"/>
+	<SubTexture name="mightydownmiss0001" x="2174" y="2089" width="378" height="410" rotated="true" frameX="-119" frameY="-0" frameWidth="643" frameHeight="425"/>
+	<SubTexture name="mightydownmiss0002" x="2410" y="906" width="434" height="364" frameX="-107" frameY="-13" frameWidth="643" frameHeight="425"/>
+	<SubTexture name="mightydownmiss0003" x="2410" y="906" width="434" height="364" frameX="-107" frameY="-13" frameWidth="643" frameHeight="425"/>
+	<SubTexture name="mightydownmiss0004" x="2410" y="906" width="434" height="364" frameX="-107" frameY="-13" frameWidth="643" frameHeight="425"/>
+	<SubTexture name="mightydownmiss0005" x="2410" y="906" width="434" height="364" frameX="-107" frameY="-13" frameWidth="643" frameHeight="425"/>
+	<SubTexture name="mightydownmiss0006" x="2410" y="906" width="434" height="364" frameX="-107" frameY="-13" frameWidth="643" frameHeight="425"/>
+	<SubTexture name="mightyleftmiss0000" x="1946" y="1299" width="455" height="642" rotated="true" frameX="-0" frameY="-0" frameWidth="642" frameHeight="455"/>
+	<SubTexture name="mightyleftmiss0001" x="1737" y="2196" width="432" height="469" rotated="true" frameX="-44" frameY="-7" frameWidth="642" frameHeight="455"/>
+	<SubTexture name="mightyleftmiss0002" x="1299" y="2196" width="433" height="470" rotated="true" frameX="-42" frameY="-7" frameWidth="642" frameHeight="455"/>
+	<SubTexture name="mightyleftmiss0003" x="1299" y="2196" width="433" height="470" rotated="true" frameX="-42" frameY="-7" frameWidth="642" frameHeight="455"/>
+	<SubTexture name="mightyleftmiss0004" x="1299" y="2196" width="433" height="470" rotated="true" frameX="-42" frameY="-7" frameWidth="642" frameHeight="455"/>
+	<SubTexture name="mightyleftmiss0005" x="1299" y="2196" width="433" height="470" rotated="true" frameX="-42" frameY="-7" frameWidth="642" frameHeight="455"/>
+	<SubTexture name="mightyleftmiss0006" x="1299" y="2196" width="433" height="470" rotated="true" frameX="-42" frameY="-7" frameWidth="642" frameHeight="455"/>
+	<SubTexture name="mightyleftmiss0007" x="1299" y="2196" width="433" height="470" rotated="true" frameX="-42" frameY="-7" frameWidth="642" frameHeight="455"/>
+	<SubTexture name="mightymissright0000" x="5" y="2299" width="642" height="439" frameX="-0" frameY="-0" frameWidth="643" frameHeight="444"/>
+	<SubTexture name="mightymissright0001" x="2410" y="1275" width="425" height="400" rotated="true" frameX="-141" frameY="-2" frameWidth="643" frameHeight="444"/>
+	<SubTexture name="mightymissright0002" x="2406" y="1680" width="425" height="404" rotated="true" frameX="-154" frameY="-2" frameWidth="643" frameHeight="444"/>
+	<SubTexture name="mightymissright0003" x="2406" y="1680" width="425" height="404" rotated="true" frameX="-154" frameY="-2" frameWidth="643" frameHeight="444"/>
+	<SubTexture name="mightymissright0004" x="2406" y="1680" width="425" height="404" rotated="true" frameX="-154" frameY="-2" frameWidth="643" frameHeight="444"/>
+	<SubTexture name="mightymissright0005" x="2406" y="1680" width="425" height="404" rotated="true" frameX="-154" frameY="-2" frameWidth="643" frameHeight="444"/>
+	<SubTexture name="mightyupmiss0000" x="5" y="894" width="642" height="503" frameX="-0" frameY="-6" frameWidth="643" frameHeight="510"/>
+	<SubTexture name="mightyupmiss0001" x="2510" y="458" width="436" height="443" rotated="true" frameX="-118" frameY="-12" frameWidth="643" frameHeight="510"/>
+	<SubTexture name="mightyupmiss0002" x="2510" y="5" width="439" height="448" frameX="-120" frameY="-1" frameWidth="643" frameHeight="510"/>
+	<SubTexture name="mightyupmiss0003" x="2510" y="5" width="439" height="448" frameX="-120" frameY="-1" frameWidth="643" frameHeight="510"/>
+	<SubTexture name="mightyupmiss0004" x="2510" y="5" width="439" height="448" frameX="-120" frameY="-1" frameWidth="643" frameHeight="510"/>
+	<SubTexture name="mightyupmiss0005" x="2510" y="5" width="439" height="448" frameX="-120" frameY="-1" frameWidth="643" frameHeight="510"/>
+	<SubTexture name="mightyupmiss0006" x="2510" y="5" width="439" height="448" frameX="-120" frameY="-1" frameWidth="643" frameHeight="510"/>
+	<SubTexture name="mightyupmiss0007" x="2510" y="5" width="439" height="448" frameX="-120" frameY="-1" frameWidth="643" frameHeight="510"/>
+	<SubTexture name="mightyzipdown0000" x="1987" y="652" width="418" height="642" rotated="true" frameX="-0" frameY="-7" frameWidth="643" frameHeight="425"/>
+	<SubTexture name="mightyzipdown0001" x="1987" y="652" width="418" height="642" rotated="true" frameX="-0" frameY="-7" frameWidth="643" frameHeight="425"/>
+	<SubTexture name="mightyzipdown0002" x="5" y="5" width="643" height="425" frameX="-0" frameY="-0" frameWidth="643" frameHeight="425"/>
+	<SubTexture name="mightyzipdown0003" x="5" y="5" width="643" height="425" frameX="-0" frameY="-0" frameWidth="643" frameHeight="425"/>
+	<SubTexture name="mightyzipdown0004" x="5" y="5" width="643" height="425" frameX="-0" frameY="-0" frameWidth="643" frameHeight="425"/>
+	<SubTexture name="mightyzipdown0005" x="5" y="5" width="643" height="425" frameX="-0" frameY="-0" frameWidth="643" frameHeight="425"/>
+	<SubTexture name="mightyzipdown0006" x="5" y="5" width="643" height="425" frameX="-0" frameY="-0" frameWidth="643" frameHeight="425"/>
+	<SubTexture name="mightyzipright0000" x="5" y="2299" width="642" height="439" frameX="-0" frameY="-5" frameWidth="642" frameHeight="444"/>
+	<SubTexture name="mightyzipright0001" x="5" y="2299" width="642" height="439" frameX="-0" frameY="-5" frameWidth="642" frameHeight="444"/>
+	<SubTexture name="mightyzipright0002" x="652" y="2197" width="642" height="444" frameX="-0" frameY="-0" frameWidth="642" frameHeight="444"/>
+	<SubTexture name="mightyzipright0003" x="652" y="2197" width="642" height="444" frameX="-0" frameY="-0" frameWidth="642" frameHeight="444"/>
+	<SubTexture name="mightyzipright0004" x="652" y="2197" width="642" height="444" frameX="-0" frameY="-0" frameWidth="642" frameHeight="444"/>
+	<SubTexture name="mightyzipright0005" x="652" y="2197" width="642" height="444" frameX="-0" frameY="-0" frameWidth="642" frameHeight="444"/>
+	<SubTexture name="mightyzipright0006" x="652" y="2197" width="642" height="444" frameX="-0" frameY="-0" frameWidth="642" frameHeight="444"/>
+</TextureAtlas>

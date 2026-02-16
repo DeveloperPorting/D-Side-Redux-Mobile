@@ -1,0 +1,67 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-13,
+				-20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "BF dies"
+		},
+		{
+			"offsets": [
+				107,
+				390
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "GodZgameover"
+		},
+		{
+			"offsets": [
+				-224,
+				3
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "gameoverloop"
+		},
+		{
+			"offsets": [
+				-148,
+				156
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "gameoverretry"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/feast/GodFeastGodZGameOverSheet",
+	"position": [
+		80,
+		1230
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		228,
+		85,
+		216
+	],
+	"camera_position": [
+		-260,
+		-1110
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

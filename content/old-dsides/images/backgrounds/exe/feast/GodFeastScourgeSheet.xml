@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="GodFeastScourgeSheet.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="scourge0000" x="0" y="0" width="1028" height="1351" pivotX="127.15" pivotY="377.9" frameX="0" frameY="-9" frameWidth="1072" frameHeight="1360"/>
+	<SubTexture name="scourge0001" x="0" y="0" width="1028" height="1351" frameX="0" frameY="-9" frameWidth="1072" frameHeight="1360"/>
+	<SubTexture name="scourge0002" x="1028" y="0" width="1015" height="1360" frameX="-5" frameY="0" frameWidth="1072" frameHeight="1360"/>
+	<SubTexture name="scourge0003" x="2043" y="0" width="1015" height="1360" frameX="-5" frameY="0" frameWidth="1072" frameHeight="1360"/>
+	<SubTexture name="scourge0004" x="0" y="1360" width="1042" height="1350" frameX="-14" frameY="-10" frameWidth="1072" frameHeight="1360"/>
+	<SubTexture name="scourge0005" x="1042" y="1360" width="1042" height="1350" frameX="-14" frameY="-10" frameWidth="1072" frameHeight="1360"/>
+	<SubTexture name="scourge0006" x="2084" y="1360" width="1052" height="1347" frameX="-13" frameY="-13" frameWidth="1072" frameHeight="1360"/>
+	<SubTexture name="scourge0007" x="0" y="2710" width="1052" height="1347" frameX="-13" frameY="-13" frameWidth="1072" frameHeight="1360"/>
+	<SubTexture name="scourge0008" x="1052" y="2710" width="1059" height="1345" frameX="-13" frameY="-15" frameWidth="1072" frameHeight="1360"/>
+	<SubTexture name="scourge0009" x="2111" y="2710" width="1059" height="1345" frameX="-13" frameY="-15" frameWidth="1072" frameHeight="1360"/>
+	<SubTexture name="scourge0010" x="1052" y="2710" width="1059" height="1345" frameX="-13" frameY="-15" frameWidth="1072" frameHeight="1360"/>
+	<SubTexture name="scourge0011" x="2111" y="2710" width="1059" height="1345" frameX="-13" frameY="-15" frameWidth="1072" frameHeight="1360"/>
+	<SubTexture name="scourge0012" x="1052" y="2710" width="1059" height="1345" frameX="-13" frameY="-15" frameWidth="1072" frameHeight="1360"/>
+	<SubTexture name="scourge0013" x="2111" y="2710" width="1059" height="1345" frameX="-13" frameY="-15" frameWidth="1072" frameHeight="1360"/>
+</TextureAtlas>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="MightyZIPSHEET.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="flimsyDown0000" x="2" y="2" width="381" height="514" frameX="0" frameY="-31" frameWidth="381" frameHeight="548"/>
+	<SubTexture name="flimsyDown0001" x="386" y="2" width="373" height="534" frameX="-7" frameY="-12" frameWidth="381" frameHeight="548"/>
+	<SubTexture name="flimsyDown0002" x="762" y="2" width="372" height="540" frameX="-7" frameY="-7" frameWidth="381" frameHeight="548"/>
+	<SubTexture name="flimsyDown0003" x="1137" y="2" width="373" height="543" frameX="-7" frameY="-4" frameWidth="381" frameHeight="548"/>
+	<SubTexture name="flimsyDown0004" x="1513" y="2" width="374" height="544" frameX="-7" frameY="-3" frameWidth="381" frameHeight="548"/>
+	<SubTexture name="flimsyDown0005" x="1890" y="2" width="374" height="545" frameX="-7" frameY="-2" frameWidth="381" frameHeight="548"/>
+	<SubTexture name="flimsyDown0006" x="2267" y="2" width="374" height="545" frameX="-7" frameY="-2" frameWidth="381" frameHeight="548"/>
+	<SubTexture name="flimsyDown0007" x="2644" y="2" width="374" height="546" frameX="-7" frameY="-1" frameWidth="381" frameHeight="548"/>
+	<SubTexture name="flimsyDown0008" x="3021" y="2" width="374" height="546" frameX="-7" frameY="-1" frameWidth="381" frameHeight="548"/>
+	<SubTexture name="flimsyDown0009" x="3398" y="2" width="374" height="547" frameX="-7" frameY="0" frameWidth="381" frameHeight="548"/>
+	<SubTexture name="flimsyDown0010" x="2" y="552" width="374" height="548" frameX="-7" frameY="0" frameWidth="381" frameHeight="548"/>
+	<SubTexture name="flimsyIdle0000" x="379" y="552" width="352" height="530" frameX="0" frameY="0" frameWidth="355" frameHeight="530"/>
+	<SubTexture name="flimsyIdle0001" x="734" y="552" width="352" height="530" frameX="0" frameY="0" frameWidth="355" frameHeight="530"/>
+	<SubTexture name="flimsyIdle0002" x="1089" y="552" width="352" height="529" frameX="0" frameY="-1" frameWidth="355" frameHeight="530"/>
+	<SubTexture name="flimsyIdle0003" x="1444" y="552" width="354" height="524" frameX="0" frameY="-6" frameWidth="355" frameHeight="530"/>
+	<SubTexture name="flimsyIdle0004" x="1801" y="552" width="355" height="523" frameX="0" frameY="-7" frameWidth="355" frameHeight="530"/>
+	<SubTexture name="flimsyIdle0005" x="2159" y="552" width="355" height="523" frameX="0" frameY="-7" frameWidth="355" frameHeight="530"/>
+	<SubTexture name="flimsyIdle0006" x="2517" y="552" width="355" height="523" frameX="0" frameY="-7" frameWidth="355" frameHeight="530"/>
+	<SubTexture name="flimsyIdle0007" x="2875" y="552" width="354" height="524" frameX="0" frameY="-6" frameWidth="355" frameHeight="530"/>
+	<SubTexture name="flimsyIdle0008" x="3232" y="552" width="351" height="529" frameX="0" frameY="-1" frameWidth="355" frameHeight="530"/>
+	<SubTexture name="flimsyIdle0009" x="3586" y="552" width="352" height="530" frameX="0" frameY="0" frameWidth="355" frameHeight="530"/>
+	<SubTexture name="flimsyIdle0010" x="379" y="552" width="352" height="530" frameX="0" frameY="0" frameWidth="355" frameHeight="530"/>
+	<SubTexture name="flimsyLaugh0000" x="2" y="1103" width="347" height="571" frameX="-8" frameY="0" frameWidth="355" frameHeight="571"/>
+	<SubTexture name="flimsyLaugh0001" x="352" y="1103" width="347" height="559" frameX="-2" frameY="-11" frameWidth="355" frameHeight="571"/>
+	<SubTexture name="flimsyLaugh0002" x="702" y="1103" width="348" height="557" frameX="-1" frameY="-13" frameWidth="355" frameHeight="571"/>
+	<SubTexture name="flimsyLaugh0003" x="1053" y="1103" width="349" height="555" frameX="0" frameY="-14" frameWidth="355" frameHeight="571"/>
+	<SubTexture name="flimsyLaugh0004" x="1405" y="1103" width="349" height="554" frameX="0" frameY="-15" frameWidth="355" frameHeight="571"/>
+	<SubTexture name="flimsyLaugh0005" x="1757" y="1103" width="349" height="554" frameX="0" frameY="-15" frameWidth="355" frameHeight="571"/>
+	<SubTexture name="flimsyLaugh0006" x="2109" y="1103" width="349" height="554" frameX="0" frameY="-15" frameWidth="355" frameHeight="571"/>
+	<SubTexture name="flimsyLaugh0007" x="2109" y="1103" width="349" height="554" frameX="0" frameY="-15" frameWidth="355" frameHeight="571"/>
+	<SubTexture name="flimsyLaugh0008" x="2109" y="1103" width="349" height="554" frameX="0" frameY="-15" frameWidth="355" frameHeight="571"/>
+	<SubTexture name="flimsyLaugh0009" x="2109" y="1103" width="349" height="554" frameX="0" frameY="-15" frameWidth="355" frameHeight="571"/>
+	<SubTexture name="flimsyLaugh0010" x="2109" y="1103" width="349" height="554" frameX="0" frameY="-15" frameWidth="355" frameHeight="571"/>
+	<SubTexture name="flimsyLeft0000" x="2461" y="1103" width="388" height="509" frameX="0" frameY="-9" frameWidth="423" frameHeight="518"/>
+	<SubTexture name="flimsyLeft0001" x="2852" y="1103" width="393" height="518" frameX="-13" frameY="0" frameWidth="423" frameHeight="518"/>
+	<SubTexture name="flimsyLeft0002" x="3248" y="1103" width="397" height="512" frameX="-18" frameY="-6" frameWidth="423" frameHeight="518"/>
+	<SubTexture name="flimsyLeft0003" x="3648" y="1103" width="399" height="509" frameX="-19" frameY="-9" frameWidth="423" frameHeight="518"/>
+	<SubTexture name="flimsyLeft0004" x="2" y="1677" width="400" height="511" frameX="-20" frameY="-7" frameWidth="423" frameHeight="518"/>
+	<SubTexture name="flimsyLeft0005" x="405" y="1677" width="400" height="512" frameX="-21" frameY="-6" frameWidth="423" frameHeight="518"/>
+	<SubTexture name="flimsyLeft0006" x="808" y="1677" width="401" height="513" frameX="-21" frameY="-5" frameWidth="423" frameHeight="518"/>
+	<SubTexture name="flimsyLeft0007" x="1212" y="1677" width="401" height="513" frameX="-21" frameY="-5" frameWidth="423" frameHeight="518"/>
+	<SubTexture name="flimsyLeft0008" x="1616" y="1677" width="402" height="513" frameX="-21" frameY="-5" frameWidth="423" frameHeight="518"/>
+	<SubTexture name="flimsyLeft0009" x="2021" y="1677" width="402" height="513" frameX="-21" frameY="-5" frameWidth="423" frameHeight="518"/>
+	<SubTexture name="flimsyLeft0010" x="2426" y="1677" width="401" height="513" frameX="-22" frameY="-5" frameWidth="423" frameHeight="518"/>
+	<SubTexture name="flimsyRight0000" x="2830" y="1677" width="409" height="559" frameX="0" frameY="-20" frameWidth="409" frameHeight="579"/>
+	<SubTexture name="flimsyRight0001" x="3242" y="1677" width="386" height="579" frameX="0" frameY="0" frameWidth="409" frameHeight="579"/>
+	<SubTexture name="flimsyRight0002" x="3631" y="1677" width="380" height="558" frameX="0" frameY="-21" frameWidth="409" frameHeight="579"/>
+	<SubTexture name="flimsyRight0003" x="2" y="2259" width="378" height="557" frameX="0" frameY="-22" frameWidth="409" frameHeight="579"/>
+	<SubTexture name="flimsyRight0004" x="383" y="2259" width="377" height="556" frameX="0" frameY="-23" frameWidth="409" frameHeight="579"/>
+	<SubTexture name="flimsyRight0005" x="763" y="2259" width="376" height="563" frameX="0" frameY="-16" frameWidth="409" frameHeight="579"/>
+	<SubTexture name="flimsyRight0006" x="1142" y="2259" width="376" height="563" frameX="0" frameY="-16" frameWidth="409" frameHeight="579"/>
+	<SubTexture name="flimsyRight0007" x="1521" y="2259" width="375" height="564" frameX="0" frameY="-15" frameWidth="409" frameHeight="579"/>
+	<SubTexture name="flimsyRight0008" x="1899" y="2259" width="375" height="564" frameX="0" frameY="-15" frameWidth="409" frameHeight="579"/>
+	<SubTexture name="flimsyRight0009" x="2277" y="2259" width="375" height="564" frameX="0" frameY="-15" frameWidth="409" frameHeight="579"/>
+	<SubTexture name="flimsyRight0010" x="2655" y="2259" width="375" height="564" frameX="0" frameY="-15" frameWidth="409" frameHeight="579"/>
+	<SubTexture name="flimsyUp0000" x="3033" y="2259" width="420" height="662"/>
+	<SubTexture name="flimsyUp0001" x="3456" y="2259" width="420" height="655" frameX="0" frameY="-5" frameWidth="420" frameHeight="662"/>
+	<SubTexture name="flimsyUp0002" x="2" y="2924" width="420" height="643" frameX="0" frameY="-17" frameWidth="420" frameHeight="662"/>
+	<SubTexture name="flimsyUp0003" x="425" y="2924" width="418" height="639" frameX="0" frameY="-20" frameWidth="420" frameHeight="662"/>
+	<SubTexture name="flimsyUp0004" x="846" y="2924" width="420" height="641" frameX="0" frameY="-18" frameWidth="420" frameHeight="662"/>
+	<SubTexture name="flimsyUp0005" x="1269" y="2924" width="420" height="641" frameX="0" frameY="-18" frameWidth="420" frameHeight="662"/>
+	<SubTexture name="flimsyUp0006" x="1692" y="2924" width="420" height="640" frameX="0" frameY="-19" frameWidth="420" frameHeight="662"/>
+	<SubTexture name="flimsyUp0007" x="2115" y="2924" width="420" height="639" frameX="0" frameY="-20" frameWidth="420" frameHeight="662"/>
+	<SubTexture name="flimsyUp0008" x="2538" y="2924" width="420" height="639" frameX="0" frameY="-20" frameWidth="420" frameHeight="662"/>
+	<SubTexture name="flimsyUp0009" x="2961" y="2924" width="420" height="639" frameX="0" frameY="-20" frameWidth="420" frameHeight="662"/>
+	<SubTexture name="flimsyUp0010" x="3384" y="2924" width="420" height="639" frameX="0" frameY="-20" frameWidth="420" frameHeight="662"/>
+</TextureAtlas>

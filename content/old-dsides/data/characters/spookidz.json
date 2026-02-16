@@ -1,0 +1,202 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-26,
+				-1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "spooky skid down"
+		},
+		{
+			"offsets": [
+				-34,
+				-52
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"indices": [],
+			"name": "spooky pump down"
+		},
+		{
+			"offsets": [
+				-2,
+				0
+			],
+			"loop": false,
+			"anim": "danceRight",
+			"fps": 12,
+			"name": "spooky dance idle",
+			"indices": [
+				8,
+				10,
+				12,
+				14
+			]
+		},
+		{
+			"offsets": [
+				-36,
+				238
+			],
+			"loop": false,
+			"anim": "singUP",
+			"fps": 24,
+			"name": "spooky skid up",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-49,
+				121
+			],
+			"loop": false,
+			"anim": "singUP-alt",
+			"fps": 24,
+			"name": "spooky pump up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "danceLeft",
+			"fps": 24,
+			"name": "spooky dance idle",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7
+			]
+		},
+		{
+			"offsets": [
+				-58,
+				45
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "spooky skid right"
+		},
+		{
+			"offsets": [
+				26,
+				22
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "spooky skid left"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-114,
+				88
+			],
+			"anim": "singRIGHT-alt",
+			"fps": 24,
+			"name": "spooky pump right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-89,
+				11
+			],
+			"anim": "singLEFT-alt",
+			"fps": 24,
+			"name": "spooky pump left",
+			"indices": []
+		},
+		{
+			"offsets": [
+				100,
+				20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "hey",
+			"indices": [],
+			"name": "spookeyHEY!!!"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-50,
+				-50
+			],
+			"anim": "singDOWN-miss",
+			"fps": 24,
+			"name": "spooky down miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				110,
+				0
+			],
+			"anim": "singLEFT-miss",
+			"fps": 24,
+			"name": "spooky left miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-70,
+				240
+			],
+			"anim": "singUP-miss",
+			"fps": 24,
+			"name": "spooky up miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-118,
+				8
+			],
+			"anim": "singRIGHT-miss",
+			"fps": 24,
+			"name": "spooky right miss",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/spookidz",
+	"position": [
+		-10,
+		240
+	],
+	"healthicon": "spooky",
+	"flip_x": true,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		40,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

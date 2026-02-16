@@ -1,0 +1,188 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				50,
+				-685
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "BF IDLE"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				69,
+				-635
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "BF LEFT MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				6,
+				-578
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "BF UP MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				33,
+				-705
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "BF RIGHT MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				58,
+				-629
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "BF DOWN MISS",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				-578
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "BF UP NOTE0"
+		},
+		{
+			"offsets": [
+				32,
+				-704
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "BF RIGHT NOTE0"
+		},
+		{
+			"offsets": [
+				430,
+				-410
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-F",
+			"indices": [],
+			"name": "BF DOWN NOTE ALT0"
+		},
+		{
+			"offsets": [
+				450,
+				-410
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-F",
+			"indices": [],
+			"name": "BF UP NOTE ALT0"
+		},
+		{
+			"offsets": [
+				442,
+				-407
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-F",
+			"indices": [],
+			"name": "BF LEFT NOTE ALT0"
+		},
+		{
+			"offsets": [
+				458,
+				-404
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-F",
+			"indices": [],
+			"name": "BF RIGHT NOTE ALT0"
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				57,
+				-694
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "BF DOWN NOTE0",
+			"indices": [
+				2,
+				3,
+				4,
+				5,
+				6,
+				7
+			],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				39,
+				-685
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "BF LEFT NOTE0",
+			"indices": [
+				2,
+				3,
+				4,
+				5,
+				6,
+				7
+			],
+			"flipX": false
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/bfPixel",
+	"position": [
+		1490,
+		230
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "bf-pixel",
+	"gameover_character": "bf-pixel-dead",
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -1943592,
+	"camera_position": [
+		600,
+		390
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 4,
+	"scale": 6,
+	"_editor_isPlayer": true
+}

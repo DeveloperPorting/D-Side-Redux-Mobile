@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="TenmaLine.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="TenmaLine0000" x="0" y="0" width="2284" height="134" pivotX="1177.4" pivotY="67"/>
+	<SubTexture name="TenmaLine0001" x="0" y="0" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0002" x="0" y="134" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0003" x="0" y="134" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0004" x="0" y="268" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0005" x="0" y="268" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0006" x="0" y="402" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0007" x="0" y="402" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0008" x="0" y="402" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0009" x="0" y="402" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0010" x="0" y="402" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0011" x="0" y="402" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0012" x="0" y="402" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0013" x="0" y="402" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0014" x="0" y="536" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0015" x="0" y="536" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0016" x="0" y="670" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0017" x="0" y="670" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0018" x="0" y="804" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0019" x="0" y="804" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0020" x="0" y="938" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0021" x="0" y="938" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0022" x="0" y="938" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0023" x="0" y="938" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0024" x="0" y="938" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0025" x="0" y="938" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0026" x="0" y="938" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0027" x="0" y="938" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0028" x="0" y="938" width="2284" height="134"/>
+	<SubTexture name="TenmaLine0029" x="0" y="938" width="2284" height="134"/>
+</TextureAtlas>

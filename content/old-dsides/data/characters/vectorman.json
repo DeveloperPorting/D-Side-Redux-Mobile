@@ -1,0 +1,119 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle-loop",
+			"fps": 24,
+			"name": "vectorman idle",
+			"indices": [
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "vectorman idle",
+			"indices": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				252,
+				55
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "vectorman left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-93,
+				-40
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "vectorman right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				89,
+				-601
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "vectorman down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				30,
+				250
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "vectorman up",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/vector",
+	"position": [
+		-360,
+		-470
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "godvector",
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -11646362,
+	"camera_position": [
+		27,
+		235
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 4,
+	"scale": 1.2,
+	"_editor_isPlayer": false
+}

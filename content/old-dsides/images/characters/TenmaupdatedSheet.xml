@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="TenmaSheet.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="tenma down0000" x="0" y="0" width="706" height="501" pivotX="-3.1" pivotY="2.45" frameX="-1" frameY="-9" frameWidth="709" frameHeight="510"/>
+	<SubTexture name="tenma down0001" x="0" y="0" width="706" height="501" frameX="-1" frameY="-9" frameWidth="709" frameHeight="510"/>
+	<SubTexture name="tenma down0002" x="706" y="0" width="709" height="486" frameX="0" frameY="0" frameWidth="709" frameHeight="510"/>
+	<SubTexture name="tenma down0003" x="706" y="0" width="709" height="486" frameX="0" frameY="0" frameWidth="709" frameHeight="510"/>
+	<SubTexture name="tenma down0004" x="706" y="0" width="709" height="486" frameX="0" frameY="0" frameWidth="709" frameHeight="510"/>
+	<SubTexture name="tenma down0005" x="706" y="0" width="709" height="486" frameX="0" frameY="0" frameWidth="709" frameHeight="510"/>
+	<SubTexture name="tenma down0006" x="706" y="0" width="709" height="486" frameX="0" frameY="0" frameWidth="709" frameHeight="510"/>
+	<SubTexture name="tenma down0007" x="706" y="0" width="709" height="486" frameX="0" frameY="0" frameWidth="709" frameHeight="510"/>
+	<SubTexture name="tenma down0008" x="706" y="0" width="709" height="486" frameX="0" frameY="0" frameWidth="709" frameHeight="510"/>
+	<SubTexture name="tenma down0009" x="706" y="0" width="709" height="486" frameX="0" frameY="0" frameWidth="709" frameHeight="510"/>
+	<SubTexture name="tenma down0010" x="706" y="0" width="709" height="486" frameX="0" frameY="0" frameWidth="709" frameHeight="510"/>
+	<SubTexture name="tenma down0011" x="706" y="0" width="709" height="486" frameX="0" frameY="0" frameWidth="709" frameHeight="510"/>
+	<SubTexture name="tenma down0012" x="706" y="0" width="709" height="486" frameX="0" frameY="0" frameWidth="709" frameHeight="510"/>
+	<SubTexture name="tenma down0013" x="706" y="0" width="709" height="486" frameX="0" frameY="0" frameWidth="709" frameHeight="510"/>
+	<SubTexture name="tenma idle0000" x="0" y="501" width="639" height="506" pivotX="0.3" pivotY="0.35" frameX="0" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0001" x="0" y="501" width="639" height="506" frameX="0" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0002" x="639" y="501" width="636" height="506" frameX="0" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0003" x="639" y="501" width="636" height="506" frameX="0" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0004" x="1275" y="501" width="638" height="506" frameX="0" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0005" x="1275" y="501" width="638" height="506" frameX="0" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0006" x="0" y="1007" width="641" height="506" frameX="0" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0007" x="0" y="1007" width="641" height="506" frameX="0" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0008" x="641" y="1007" width="644" height="506" frameX="0" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0009" x="641" y="1007" width="644" height="506" frameX="0" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0010" x="641" y="1007" width="644" height="506" frameX="0" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0011" x="641" y="1007" width="644" height="506" frameX="0" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0012" x="641" y="1007" width="644" height="506" frameX="0" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0013" x="641" y="1007" width="644" height="506" frameX="0" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0014" x="1285" y="1007" width="645" height="506" frameX="-7" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0015" x="1285" y="1007" width="645" height="506" frameX="-7" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0016" x="0" y="1513" width="645" height="506" frameX="-5" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0017" x="0" y="1513" width="645" height="506" frameX="-5" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0018" x="645" y="1513" width="645" height="506" frameX="-1" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0019" x="645" y="1513" width="645" height="506" frameX="-1" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0020" x="1290" y="1513" width="644" height="506" frameX="-1" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0021" x="1290" y="1513" width="644" height="506" frameX="-1" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0022" x="0" y="2019" width="644" height="506" frameX="0" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0023" x="0" y="2019" width="644" height="506" frameX="0" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0024" x="0" y="2019" width="644" height="506" frameX="0" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0025" x="0" y="2019" width="644" height="506" frameX="0" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0026" x="0" y="2019" width="644" height="506" frameX="0" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma idle0027" x="0" y="2019" width="644" height="506" frameX="0" frameY="0" frameWidth="652" frameHeight="506"/>
+	<SubTexture name="tenma left0000" x="644" y="2019" width="869" height="503" pivotX="99.6" pivotY="-1.25" frameX="-8" frameY="0" frameWidth="878" frameHeight="503"/>
+	<SubTexture name="tenma left0001" x="644" y="2019" width="869" height="503" frameX="-8" frameY="0" frameWidth="878" frameHeight="503"/>
+	<SubTexture name="tenma left0002" x="0" y="2525" width="878" height="498" frameX="0" frameY="-1" frameWidth="878" frameHeight="503"/>
+	<SubTexture name="tenma left0003" x="0" y="2525" width="878" height="498" frameX="0" frameY="-1" frameWidth="878" frameHeight="503"/>
+	<SubTexture name="tenma left0004" x="0" y="2525" width="878" height="498" frameX="0" frameY="-1" frameWidth="878" frameHeight="503"/>
+	<SubTexture name="tenma left0005" x="0" y="2525" width="878" height="498" frameX="0" frameY="-1" frameWidth="878" frameHeight="503"/>
+	<SubTexture name="tenma left0006" x="0" y="2525" width="878" height="498" frameX="0" frameY="-1" frameWidth="878" frameHeight="503"/>
+	<SubTexture name="tenma left0007" x="0" y="2525" width="878" height="498" frameX="0" frameY="-1" frameWidth="878" frameHeight="503"/>
+	<SubTexture name="tenma left0008" x="0" y="2525" width="878" height="498" frameX="0" frameY="-1" frameWidth="878" frameHeight="503"/>
+	<SubTexture name="tenma left0009" x="0" y="2525" width="878" height="498" frameX="0" frameY="-1" frameWidth="878" frameHeight="503"/>
+	<SubTexture name="tenma left0010" x="0" y="2525" width="878" height="498" frameX="0" frameY="-1" frameWidth="878" frameHeight="503"/>
+	<SubTexture name="tenma left0011" x="0" y="2525" width="878" height="498" frameX="0" frameY="-1" frameWidth="878" frameHeight="503"/>
+	<SubTexture name="tenma left0012" x="0" y="2525" width="878" height="498" frameX="0" frameY="-1" frameWidth="878" frameHeight="503"/>
+	<SubTexture name="tenma left0013" x="0" y="2525" width="878" height="498" frameX="0" frameY="-1" frameWidth="878" frameHeight="503"/>
+	<SubTexture name="tenma right0000" x="878" y="2525" width="617" height="560" pivotX="5.75" pivotY="11.3" frameX="-1" frameY="0" frameWidth="618" frameHeight="560"/>
+	<SubTexture name="tenma right0001" x="878" y="2525" width="617" height="560" frameX="-1" frameY="0" frameWidth="618" frameHeight="560"/>
+	<SubTexture name="tenma right0002" x="0" y="3085" width="598" height="549" frameX="0" frameY="-11" frameWidth="618" frameHeight="560"/>
+	<SubTexture name="tenma right0003" x="0" y="3085" width="598" height="549" frameX="0" frameY="-11" frameWidth="618" frameHeight="560"/>
+	<SubTexture name="tenma right0004" x="0" y="3085" width="598" height="549" frameX="0" frameY="-11" frameWidth="618" frameHeight="560"/>
+	<SubTexture name="tenma right0005" x="0" y="3085" width="598" height="549" frameX="0" frameY="-11" frameWidth="618" frameHeight="560"/>
+	<SubTexture name="tenma right0006" x="0" y="3085" width="598" height="549" frameX="0" frameY="-11" frameWidth="618" frameHeight="560"/>
+	<SubTexture name="tenma right0007" x="0" y="3085" width="598" height="549" frameX="0" frameY="-11" frameWidth="618" frameHeight="560"/>
+	<SubTexture name="tenma right0008" x="0" y="3085" width="598" height="549" frameX="0" frameY="-11" frameWidth="618" frameHeight="560"/>
+	<SubTexture name="tenma right0009" x="0" y="3085" width="598" height="549" frameX="0" frameY="-11" frameWidth="618" frameHeight="560"/>
+	<SubTexture name="tenma right0010" x="0" y="3085" width="598" height="549" frameX="0" frameY="-11" frameWidth="618" frameHeight="560"/>
+	<SubTexture name="tenma right0011" x="0" y="3085" width="598" height="549" frameX="0" frameY="-11" frameWidth="618" frameHeight="560"/>
+	<SubTexture name="tenma right0012" x="0" y="3085" width="598" height="549" frameX="0" frameY="-11" frameWidth="618" frameHeight="560"/>
+	<SubTexture name="tenma right0013" x="0" y="3085" width="598" height="549" frameX="0" frameY="-11" frameWidth="618" frameHeight="560"/>
+	<SubTexture name="tenma up0000" x="598" y="3085" width="615" height="583" pivotX="-32.1" pivotY="-21.1" frameX="0" frameY="0" frameWidth="624" frameHeight="583"/>
+	<SubTexture name="tenma up0001" x="598" y="3085" width="615" height="583" frameX="0" frameY="0" frameWidth="624" frameHeight="583"/>
+	<SubTexture name="tenma up0002" x="1213" y="3085" width="623" height="568" frameX="-1" frameY="-15" frameWidth="624" frameHeight="583"/>
+	<SubTexture name="tenma up0003" x="1213" y="3085" width="623" height="568" frameX="-1" frameY="-15" frameWidth="624" frameHeight="583"/>
+	<SubTexture name="tenma up0004" x="1213" y="3085" width="623" height="568" frameX="-1" frameY="-15" frameWidth="624" frameHeight="583"/>
+	<SubTexture name="tenma up0005" x="1213" y="3085" width="623" height="568" frameX="-1" frameY="-15" frameWidth="624" frameHeight="583"/>
+	<SubTexture name="tenma up0006" x="1213" y="3085" width="623" height="568" frameX="-1" frameY="-15" frameWidth="624" frameHeight="583"/>
+	<SubTexture name="tenma up0007" x="1213" y="3085" width="623" height="568" frameX="-1" frameY="-15" frameWidth="624" frameHeight="583"/>
+	<SubTexture name="tenma up0008" x="1213" y="3085" width="623" height="568" frameX="-1" frameY="-15" frameWidth="624" frameHeight="583"/>
+	<SubTexture name="tenma up0009" x="1213" y="3085" width="623" height="568" frameX="-1" frameY="-15" frameWidth="624" frameHeight="583"/>
+	<SubTexture name="tenma up0010" x="1213" y="3085" width="623" height="568" frameX="-1" frameY="-15" frameWidth="624" frameHeight="583"/>
+	<SubTexture name="tenma up0011" x="1213" y="3085" width="623" height="568" frameX="-1" frameY="-15" frameWidth="624" frameHeight="583"/>
+	<SubTexture name="tenma up0012" x="1213" y="3085" width="623" height="568" frameX="-1" frameY="-15" frameWidth="624" frameHeight="583"/>
+	<SubTexture name="tenma up0013" x="1213" y="3085" width="623" height="568" frameX="-1" frameY="-15" frameWidth="624" frameHeight="583"/>
+</TextureAtlas>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="tezma2.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="tezma20000" x="0" y="0" width="267" height="303" pivotX="10.2" pivotY="2.15" frameX="0" frameY="-9" frameWidth="267" frameHeight="319"/>
+	<SubTexture name="tezma20001" x="0" y="0" width="267" height="303" frameX="0" frameY="-9" frameWidth="267" frameHeight="319"/>
+	<SubTexture name="tezma20002" x="267" y="0" width="260" height="308" frameX="-4" frameY="-6" frameWidth="267" frameHeight="319"/>
+	<SubTexture name="tezma20003" x="267" y="0" width="260" height="308" frameX="-4" frameY="-6" frameWidth="267" frameHeight="319"/>
+	<SubTexture name="tezma20004" x="527" y="0" width="255" height="312" frameX="-7" frameY="-4" frameWidth="267" frameHeight="319"/>
+	<SubTexture name="tezma20005" x="527" y="0" width="255" height="312" frameX="-7" frameY="-4" frameWidth="267" frameHeight="319"/>
+	<SubTexture name="tezma20006" x="0" y="312" width="250" height="319" frameX="-10" frameY="0" frameWidth="267" frameHeight="319"/>
+	<SubTexture name="tezma20007" x="0" y="312" width="250" height="319" frameX="-10" frameY="0" frameWidth="267" frameHeight="319"/>
+	<SubTexture name="tezma20008" x="250" y="312" width="250" height="316" frameX="-10" frameY="-2" frameWidth="267" frameHeight="319"/>
+	<SubTexture name="tezma20009" x="250" y="312" width="250" height="316" frameX="-10" frameY="-2" frameWidth="267" frameHeight="319"/>
+	<SubTexture name="tezma20010" x="250" y="312" width="250" height="316" frameX="-10" frameY="-2" frameWidth="267" frameHeight="319"/>
+	<SubTexture name="tezma20011" x="250" y="312" width="250" height="316" frameX="-10" frameY="-2" frameWidth="267" frameHeight="319"/>
+	<SubTexture name="tezma20012" x="250" y="312" width="250" height="316" frameX="-10" frameY="-2" frameWidth="267" frameHeight="319"/>
+	<SubTexture name="tezma20013" x="250" y="312" width="250" height="316" frameX="-10" frameY="-2" frameWidth="267" frameHeight="319"/>
+</TextureAtlas>

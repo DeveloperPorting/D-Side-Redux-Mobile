@@ -1,0 +1,100 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				260,
+				-123
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "planeman idle"
+		},
+		{
+			"offsets": [
+				379,
+				-132
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "planeman left"
+		},
+		{
+			"offsets": [
+				276,
+				-226
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "planeman down"
+		},
+		{
+			"offsets": [
+				233,
+				45
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "planeman up"
+		},
+		{
+			"offsets": [
+				216,
+				-135
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "planeman right"
+		},
+		{
+			"offsets": [
+				255,
+				-121
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "ugh",
+			"indices": [],
+			"name": "planeman ugh"
+		},
+		{
+			"offsets": [
+				256,
+				-113
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "ugly",
+			"indices": [],
+			"name": "planeman ugly"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/planeman_assets",
+	"position": [
+		220,
+		70
+	],
+	"healthicon": "planeman",
+	"flip_x": false,
+	"healthbar_colors": [
+		225,
+		225,
+		225
+	],
+	"camera_position": [
+		-320,
+		160
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

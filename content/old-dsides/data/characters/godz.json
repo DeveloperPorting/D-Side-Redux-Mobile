@@ -1,0 +1,119 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				290,
+				160
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "god z left"
+		},
+		{
+			"offsets": [
+				-96,
+				-2
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "god z right"
+		},
+		{
+			"offsets": [
+				339,
+				-331
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "god z down"
+		},
+		{
+			"offsets": [
+				160,
+				290
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "god z up"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "god z idle",
+			"indices": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle-loop",
+			"fps": 24,
+			"name": "god z idle",
+			"indices": [
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24
+			]
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/godz",
+	"position": [
+		-270,
+		-440
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "godz",
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -11646362,
+	"camera_position": [
+		-239,
+		262
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

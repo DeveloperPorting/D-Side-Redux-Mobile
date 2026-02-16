@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "lordxidle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				21,
+				39
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "lordxleft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-14,
+				-26
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "lordxdown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-1,
+				47
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "lordxup",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-34,
+				-22
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "lordxright",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/feast/GodFeastLordXAssets",
+	"position": [
+		-100,
+		0
+	],
+	"healthicon": "lordx",
+	"flip_x": false,
+	"healthbar_colors": [
+		52,
+		75,
+		90
+	],
+	"camera_position": [
+		130,
+		110
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

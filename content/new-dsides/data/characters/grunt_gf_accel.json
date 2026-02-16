@@ -1,0 +1,208 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				166,
+				95
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "idle-tricky",
+			"flipX": false,
+			"indices": [],
+			"name": "TrickyIdle"
+		},
+		{
+			"offsets": [
+				167,
+				71
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"flipX": false,
+			"indices": [],
+			"name": "TrickyLeft"
+		},
+		{
+			"offsets": [
+				36,
+				44
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"flipX": false,
+			"indices": [],
+			"name": "TrickyRight"
+		},
+		{
+			"offsets": [
+				21,
+				174
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"flipX": false,
+			"indices": [],
+			"name": "TrickyUp"
+		},
+		{
+			"offsets": [
+				92,
+				-43
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"flipX": false,
+			"indices": [],
+			"name": "TrickyDown"
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				1,
+				-9
+			],
+			"anim": "danceLeft",
+			"fps": 24,
+			"name": "GruntGFidle",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11
+			],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				1,
+				-9
+			],
+			"anim": "danceRight",
+			"fps": 24,
+			"name": "GruntGFidle",
+			"indices": [
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22
+			],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				191,
+				1355
+			],
+			"anim": "scene",
+			"fps": 24,
+			"name": "TrickyEntrance",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-440,
+				764
+			],
+			"anim": "dieGF",
+			"fps": 24,
+			"name": "gfDIES",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				156,
+				174
+			],
+			"anim": "dieTRICK-1",
+			"fps": 24,
+			"name": "TrickyDeathBack",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				316,
+				202
+			],
+			"anim": "dieTRICK-2",
+			"fps": 24,
+			"name": "TrickyDeathFront",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				60,
+				61
+			],
+			"anim": "idle-deimos",
+			"fps": 24,
+			"name": "DeimosIdle",
+			"indices": [],
+			"flipX": false
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/madness/gf",
+	"position": [
+		-70,
+		-720
+	],
+	"dance_every": 1,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "gf",
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -5963699,
+	"camera_position": [
+		-725,
+		-2186
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 3.8,
+	"scale": 0.7,
+	"_editor_isPlayer": false
+}

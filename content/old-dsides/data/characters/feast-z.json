@@ -1,0 +1,146 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "godzidle",
+			"indices": []
+		},
+		{
+			"cameraOffset": [
+				-30,
+				0
+			],
+			"loop": false,
+			"offsets": [
+				103,
+				-9
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "godzleft0",
+			"indices": []
+		},
+		{
+			"cameraOffset": [
+				0,
+				30
+			],
+			"loop": false,
+			"offsets": [
+				3,
+				5
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "godzdown0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-49,
+				45
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "godzup0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-55,
+				9
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "godzright0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				116,
+				-8
+			],
+			"cameraOffset": [
+				-30,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "godzleftmiss"
+		},
+		{
+			"offsets": [
+				-69,
+				9
+			],
+			"cameraOffset": [
+				-30,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "godxrightmiss"
+		},
+		{
+			"offsets": [
+				-56,
+				47
+			],
+			"cameraOffset": [
+				-30,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "godzupmiss"
+		},
+		{
+			"offsets": [
+				3,
+				11
+			],
+			"cameraOffset": [
+				-30,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "godzdownmiss"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/feast/GodFeastGodZSheet",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "godz",
+	"flip_x": true,
+	"healthbar_colors": [
+		78,
+		74,
+		102
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

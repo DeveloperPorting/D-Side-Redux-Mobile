@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="GodFeastTable.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="table0000" x="0" y="0" width="2193" height="780" pivotX="-43.95" pivotY="208.6"/>
+	<SubTexture name="table0001" x="0" y="0" width="2193" height="780"/>
+</TextureAtlas>

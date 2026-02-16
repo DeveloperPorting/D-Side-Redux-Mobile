@@ -1,0 +1,242 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-218,
+				-280
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "SpiritIdle",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-200,
+				-253
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			],
+			"name": "SpiritLeft"
+		},
+		{
+			"offsets": [
+				120,
+				-220
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-F",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			],
+			"name": "SpiritLeftALT"
+		},
+		{
+			"offsets": [
+				-220,
+				-240
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			],
+			"name": "SpiritUp"
+		},
+		{
+			"offsets": [
+				100,
+				-160
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-F",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			],
+			"name": "SpiritUpALT"
+		},
+		{
+			"offsets": [
+				-216,
+				-253
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			],
+			"name": "SpiritRight"
+		},
+		{
+			"offsets": [
+				60,
+				-200
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-F",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			],
+			"name": "SpiritRightALT"
+		},
+		{
+			"offsets": [
+				-203,
+				-265
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			],
+			"name": "SpiritDown"
+		},
+		{
+			"offsets": [
+				280,
+				-210
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-F",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			],
+			"name": "SpiritDownALT"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/SpiritAssets",
+	"position": [
+		150,
+		290
+	],
+	"healthicon": "spirit-pixel",
+	"flip_x": false,
+	"healthbar_colors": [
+		135,
+		52,
+		184
+	],
+	"camera_position": [
+		-450,
+		-60
+	],
+	"sing_duration": 4,
+	"scale": 6
+}

@@ -1,0 +1,103 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Whitty/WhittyIdle"
+		},
+		{
+			"offsets": [
+				232,
+				-74
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Whitty/WhittyLeft"
+		},
+		{
+			"offsets": [
+				131,
+				-218
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Whitty/WhittyDown"
+		},
+		{
+			"offsets": [
+				122,
+				16
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Whitty/WhittyUp"
+		},
+		{
+			"offsets": [
+				-99,
+				-88
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Whitty/WhittyRight"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle-loop",
+			"fps": 24,
+			"name": "Whitty/WhittyIdle",
+			"indices": [
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19
+			]
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Whitty",
+	"position": [
+		20,
+		-220
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "whitty",
+	"gameover_character": null,
+	"flip_x": false,
+	"healthbar_colour": -5308416,
+	"camera_position": [
+		-302,
+		29
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 4,
+	"scale": 0.9,
+	"_editor_isPlayer": false
+}

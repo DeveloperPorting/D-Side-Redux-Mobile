@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-1,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "sonicFAKEI"
+		},
+		{
+			"offsets": [
+				4,
+				2
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "sonicFAKELeft"
+		},
+		{
+			"offsets": [
+				12,
+				-20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "sonicFAKEDown"
+		},
+		{
+			"offsets": [
+				-10,
+				15
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "sonicFAKEUp"
+		},
+		{
+			"offsets": [
+				-5,
+				-5
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "sonicFAKERight"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/secret/FakeMightySheet",
+	"position": [
+		110,
+		180
+	],
+	"healthicon": "fakemighty",
+	"flip_x": false,
+	"healthbar_colors": [
+		150,
+		139,
+		195
+	],
+	"camera_position": [
+		-20,
+		50
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

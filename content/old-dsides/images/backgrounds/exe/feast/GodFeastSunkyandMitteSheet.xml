@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="GodFeastSunkyandMitteSheet.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="sunkyiandmitee0000" x="0" y="0" width="592" height="441" pivotX="-165.9" pivotY="-408.05" frameX="0" frameY="-1" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0001" x="0" y="0" width="592" height="441" frameX="0" frameY="-1" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0002" x="592" y="0" width="592" height="442" frameX="-2" frameY="0" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0003" x="592" y="0" width="592" height="442" frameX="-2" frameY="0" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0004" x="1184" y="0" width="591" height="421" frameX="-3" frameY="-21" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0005" x="1184" y="0" width="591" height="421" frameX="-3" frameY="-21" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0006" x="0" y="442" width="592" height="411" frameX="-4" frameY="-31" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0007" x="0" y="442" width="592" height="411" frameX="-4" frameY="-31" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0008" x="592" y="442" width="592" height="415" frameX="-4" frameY="-27" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0009" x="592" y="442" width="592" height="415" frameX="-4" frameY="-27" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0010" x="592" y="442" width="592" height="415" frameX="-4" frameY="-27" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0011" x="592" y="442" width="592" height="415" frameX="-4" frameY="-27" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0012" x="592" y="442" width="592" height="415" frameX="-4" frameY="-27" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0013" x="592" y="442" width="592" height="415" frameX="-4" frameY="-27" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0014" x="1184" y="442" width="594" height="423" frameX="-6" frameY="-19" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0015" x="1184" y="442" width="594" height="423" frameX="-6" frameY="-19" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0016" x="0" y="865" width="593" height="424" frameX="-5" frameY="-18" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0017" x="0" y="865" width="593" height="424" frameX="-5" frameY="-18" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0018" x="593" y="865" width="592" height="412" frameX="-6" frameY="-30" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0019" x="593" y="865" width="592" height="412" frameX="-6" frameY="-30" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0020" x="1185" y="865" width="592" height="418" frameX="-4" frameY="-24" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0021" x="1185" y="865" width="592" height="418" frameX="-4" frameY="-24" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0022" x="0" y="1289" width="592" height="415" frameX="-4" frameY="-27" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0023" x="0" y="1289" width="592" height="415" frameX="-4" frameY="-27" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0024" x="0" y="1289" width="592" height="415" frameX="-4" frameY="-27" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0025" x="0" y="1289" width="592" height="415" frameX="-4" frameY="-27" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0026" x="0" y="1289" width="592" height="415" frameX="-4" frameY="-27" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0027" x="0" y="1289" width="592" height="415" frameX="-4" frameY="-27" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0028" x="0" y="1289" width="592" height="415" frameX="-4" frameY="-27" frameWidth="600" frameHeight="442"/>
+	<SubTexture name="sunkyiandmitee0029" x="0" y="1289" width="592" height="415" frameX="-4" frameY="-27" frameWidth="600" frameHeight="442"/>
+</TextureAtlas>

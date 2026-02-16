@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TextureAtlas imagePath="spoinky_boingy.png" width="2927" height="3309" spritePadding="3" borderPadding="3">
+	<SubTexture name="spoinky_bonk0000" x="2266" y="2707" width="189" height="314" frameX="-584" frameY="-435" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0001" x="1826" y="3" width="632" height="726" rotated="true" frameX="-47" frameY="-136" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0002" x="3" y="3" width="580" height="937" rotated="true" frameX="-8" frameY="-327" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0003" x="586" y="3" width="587" height="886" rotated="true" frameX="-66" frameY="-310" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0004" x="1176" y="3" width="647" height="788" frameX="-358" frameY="0" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0005" x="2461" y="3" width="463" height="872" rotated="true" frameX="0" frameY="-4" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0006" x="2133" y="3024" width="155" height="162" frameX="-717" frameY="-305" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0007" x="2291" y="3024" width="84" height="110" frameX="-774" frameY="-264" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0008" x="2291" y="3024" width="84" height="110" frameX="-774" frameY="-264" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0009" x="2622" y="3024" width="43" height="55" rotated="true" frameX="-797" frameY="-274" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0010" x="2622" y="3024" width="43" height="55" rotated="true" frameX="-797" frameY="-274" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0011" x="2668" y="3024" width="33" height="40" rotated="true" frameX="-821" frameY="-261" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0012" x="2668" y="3024" width="33" height="40" rotated="true" frameX="-821" frameY="-261" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0013" x="2704" y="3024" width="20" height="25" frameX="-843" frameY="-261" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0014" x="2704" y="3024" width="20" height="25" frameX="-843" frameY="-261" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0015" x="2742" y="3024" width="10" height="13" rotated="true" frameX="-852" frameY="-270" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0016" x="2742" y="3024" width="10" height="13" rotated="true" frameX="-852" frameY="-270" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0017" x="2755" y="3024" width="9" height="10" rotated="true" frameX="-859" frameY="-271" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0018" x="2755" y="3024" width="9" height="10" rotated="true" frameX="-859" frameY="-271" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0019" x="2767" y="3024" width="5" height="6" frameX="-864" frameY="-273" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0020" x="2767" y="3024" width="5" height="6" frameX="-864" frameY="-273" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0021" x="2775" y="3024" width="1" height="1" frameX="0" frameY="0" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0022" x="2775" y="3024" width="1" height="1" frameX="0" frameY="0" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0023" x="2727" y="3024" width="12" height="19" frameX="-874" frameY="-270" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0024" x="2578" y="3024" width="41" height="61" frameX="-860" frameY="-248" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0025" x="2578" y="3024" width="41" height="61" frameX="-860" frameY="-248" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0026" x="2517" y="3024" width="58" height="61" frameX="-848" frameY="-244" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0027" x="2517" y="3024" width="58" height="61" frameX="-848" frameY="-244" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0028" x="2517" y="3024" width="58" height="61" frameX="-848" frameY="-244" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0029" x="2450" y="3024" width="64" height="65" frameX="-844" frameY="-240" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0030" x="2450" y="3024" width="64" height="65" frameX="-844" frameY="-240" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0031" x="2378" y="3024" width="69" height="71" frameX="-845" frameY="-238" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0032" x="2775" y="3024" width="1" height="1" frameX="0" frameY="0" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0033" x="2775" y="3024" width="1" height="1" frameX="0" frameY="0" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0034" x="2775" y="3024" width="1" height="1" frameX="0" frameY="0" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0035" x="2775" y="3024" width="1" height="1" frameX="0" frameY="0" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_bonk0036" x="2775" y="3024" width="1" height="1" frameX="0" frameY="0" frameWidth="1005" frameHeight="908"/>
+	<SubTexture name="spoinky_down0000" x="1757" y="3024" width="185" height="197" rotated="true" frameX="-1" frameY="-128" frameWidth="198" frameHeight="315"/>
+	<SubTexture name="spoinky_down0001" x="1757" y="3024" width="185" height="197" rotated="true" frameX="-1" frameY="-128" frameWidth="198" frameHeight="315"/>
+	<SubTexture name="spoinky_down0002" x="1945" y="3024" width="185" height="197" rotated="true" frameX="-1" frameY="-128" frameWidth="198" frameHeight="315"/>
+	<SubTexture name="spoinky_down0003" x="1945" y="3024" width="185" height="197" rotated="true" frameX="-1" frameY="-128" frameWidth="198" frameHeight="315"/>
+	<SubTexture name="spoinky_down0004" x="1556" y="3024" width="198" height="199" frameX="0" frameY="-114" frameWidth="198" frameHeight="315"/>
+	<SubTexture name="spoinky_down0005" x="1556" y="3024" width="198" height="199" frameX="0" frameY="-114" frameWidth="198" frameHeight="315"/>
+	<SubTexture name="spoinky_down0006" x="1356" y="3024" width="197" height="251" frameX="0" frameY="-62" frameWidth="198" frameHeight="315"/>
+	<SubTexture name="spoinky_down0007" x="1155" y="3024" width="198" height="251" frameX="0" frameY="-62" frameWidth="198" frameHeight="315"/>
+	<SubTexture name="spoinky_down0008" x="954" y="3024" width="198" height="282" frameX="0" frameY="-31" frameWidth="198" frameHeight="315"/>
+	<SubTexture name="spoinky_down0009" x="954" y="3024" width="198" height="282" frameX="0" frameY="-31" frameWidth="198" frameHeight="315"/>
+	<SubTexture name="spoinky_down0010" x="2458" y="2707" width="189" height="314" frameX="-4" frameY="-1" frameWidth="198" frameHeight="315"/>
+	<SubTexture name="spoinky_down0011" x="2650" y="2707" width="189" height="314" frameX="-4" frameY="-1" frameWidth="198" frameHeight="315"/>
+	<SubTexture name="spoinky_down0012" x="3" y="3024" width="314" height="189" rotated="true" frameX="-4" frameY="0" frameWidth="198" frameHeight="315"/>
+	<SubTexture name="spoinky_down0013" x="320" y="3024" width="314" height="189" rotated="true" frameX="-4" frameY="0" frameWidth="198" frameHeight="315"/>
+	<SubTexture name="spoinky_down0014" x="637" y="3024" width="314" height="189" rotated="true" frameX="-4" frameY="0" frameWidth="198" frameHeight="315"/>
+	<SubTexture name="spoinky_down0015" x="3" y="3024" width="314" height="189" rotated="true" frameX="-4" frameY="0" frameWidth="198" frameHeight="315"/>
+	<SubTexture name="spoinky_down0016" x="320" y="3024" width="314" height="189" rotated="true" frameX="-4" frameY="0" frameWidth="198" frameHeight="315"/>
+	<SubTexture name="spoinky_down0017" x="637" y="3024" width="314" height="189" rotated="true" frameX="-4" frameY="0" frameWidth="198" frameHeight="315"/>
+	<SubTexture name="spoinky_down0018" x="3" y="3024" width="314" height="189" rotated="true" frameX="-4" frameY="0" frameWidth="198" frameHeight="315"/>
+	<SubTexture name="spoinky_down0019" x="320" y="3024" width="314" height="189" rotated="true" frameX="-4" frameY="0" frameWidth="198" frameHeight="315"/>
+	<SubTexture name="spoinky_idle0000" x="2611" y="2356" width="246" height="300" rotated="true" frameX="-1" frameY="-6" frameWidth="302" frameHeight="253"/>
+	<SubTexture name="spoinky_idle0001" x="3" y="2707" width="246" height="300" rotated="true" frameX="-1" frameY="-6" frameWidth="302" frameHeight="253"/>
+	<SubTexture name="spoinky_idle0002" x="1512" y="2707" width="245" height="299" rotated="true" frameX="-2" frameY="-7" frameWidth="302" frameHeight="253"/>
+	<SubTexture name="spoinky_idle0003" x="505" y="2707" width="245" height="300" rotated="true" frameX="-1" frameY="-7" frameWidth="302" frameHeight="253"/>
+	<SubTexture name="spoinky_idle0004" x="1097" y="2356" width="247" height="300" rotated="true" frameX="-1" frameY="-6" frameWidth="302" frameHeight="253"/>
+	<SubTexture name="spoinky_idle0005" x="2106" y="2356" width="247" height="299" rotated="true" frameX="-2" frameY="-6" frameWidth="302" frameHeight="253"/>
+	<SubTexture name="spoinky_idle0006" x="1347" y="2356" width="250" height="296" rotated="true" frameX="-1" frameY="-3" frameWidth="302" frameHeight="253"/>
+	<SubTexture name="spoinky_idle0007" x="1600" y="2356" width="250" height="296" rotated="true" frameX="-1" frameY="-3" frameWidth="302" frameHeight="253"/>
+	<SubTexture name="spoinky_idle0008" x="753" y="2707" width="250" height="294" rotated="true" frameX="-1" frameY="-2" frameWidth="302" frameHeight="253"/>
+	<SubTexture name="spoinky_idle0009" x="1853" y="2356" width="250" height="296" rotated="true" frameX="0" frameY="-2" frameWidth="302" frameHeight="253"/>
+	<SubTexture name="spoinky_idle0010" x="1006" y="2707" width="250" height="294" rotated="true" frameX="-1" frameY="-2" frameWidth="302" frameHeight="253"/>
+	<SubTexture name="spoinky_idle0011" x="1760" y="2707" width="250" height="293" rotated="true" frameX="-2" frameY="-2" frameWidth="302" frameHeight="253"/>
+	<SubTexture name="spoinky_idle0012" x="252" y="2707" width="250" height="295" rotated="true" frameX="-1" frameY="-2" frameWidth="302" frameHeight="253"/>
+	<SubTexture name="spoinky_idle0013" x="1006" y="2707" width="250" height="294" rotated="true" frameX="-1" frameY="-2" frameWidth="302" frameHeight="253"/>
+	<SubTexture name="spoinky_idle0014" x="1760" y="2707" width="250" height="293" rotated="true" frameX="-2" frameY="-2" frameWidth="302" frameHeight="253"/>
+	<SubTexture name="spoinky_idle0015" x="252" y="2707" width="250" height="295" rotated="true" frameX="-1" frameY="-2" frameWidth="302" frameHeight="253"/>
+	<SubTexture name="spoinky_idle0016" x="1006" y="2707" width="250" height="294" rotated="true" frameX="-1" frameY="-2" frameWidth="302" frameHeight="253"/>
+	<SubTexture name="spoinky_idle0017" x="1259" y="2707" width="250" height="294" rotated="true" frameX="0" frameY="-2" frameWidth="302" frameHeight="253"/>
+	<SubTexture name="spoinky_idle0018" x="2013" y="2707" width="250" height="293" rotated="true" frameX="-1" frameY="-2" frameWidth="302" frameHeight="253"/>
+	<SubTexture name="spoinky_idle0019" x="2356" y="2356" width="252" height="293" rotated="true" frameX="-2" frameY="0" frameWidth="302" frameHeight="253"/>
+	<SubTexture name="spoinky_left0000" x="1218" y="1673" width="237" height="334" rotated="true" frameX="0" frameY="-3" frameWidth="334" frameHeight="241"/>
+	<SubTexture name="spoinky_left0001" x="1458" y="1673" width="237" height="334" rotated="true" frameX="0" frameY="-3" frameWidth="334" frameHeight="241"/>
+	<SubTexture name="spoinky_left0002" x="2003" y="1305" width="238" height="333" rotated="true" frameX="-1" frameY="-3" frameWidth="334" frameHeight="241"/>
+	<SubTexture name="spoinky_left0003" x="1518" y="1305" width="239" height="333" rotated="true" frameX="-1" frameY="-2" frameWidth="334" frameHeight="241"/>
+	<SubTexture name="spoinky_left0004" x="1698" y="1673" width="239" height="331" rotated="true" frameX="-3" frameY="0" frameWidth="334" frameHeight="241"/>
+	<SubTexture name="spoinky_left0005" x="1760" y="1305" width="240" height="331" rotated="true" frameX="-3" frameY="0" frameWidth="334" frameHeight="241"/>
+	<SubTexture name="spoinky_left0006" x="1940" y="1673" width="239" height="330" rotated="true" frameX="-4" frameY="0" frameWidth="334" frameHeight="241"/>
+	<SubTexture name="spoinky_left0007" x="2244" y="1305" width="240" height="330" rotated="true" frameX="-4" frameY="0" frameWidth="334" frameHeight="241"/>
+	<SubTexture name="spoinky_left0008" x="2487" y="1305" width="240" height="330" rotated="true" frameX="-4" frameY="0" frameWidth="334" frameHeight="241"/>
+	<SubTexture name="spoinky_left0009" x="3" y="1673" width="240" height="330" rotated="true" frameX="-4" frameY="0" frameWidth="334" frameHeight="241"/>
+	<SubTexture name="spoinky_left0010" x="2182" y="1673" width="239" height="330" rotated="true" frameX="-4" frameY="0" frameWidth="334" frameHeight="241"/>
+	<SubTexture name="spoinky_left0011" x="246" y="1673" width="240" height="330" rotated="true" frameX="-4" frameY="0" frameWidth="334" frameHeight="241"/>
+	<SubTexture name="spoinky_left0012" x="489" y="1673" width="240" height="330" rotated="true" frameX="-4" frameY="0" frameWidth="334" frameHeight="241"/>
+	<SubTexture name="spoinky_left0013" x="732" y="1673" width="240" height="330" rotated="true" frameX="-4" frameY="0" frameWidth="334" frameHeight="241"/>
+	<SubTexture name="spoinky_left0014" x="2424" y="1673" width="239" height="330" rotated="true" frameX="-4" frameY="0" frameWidth="334" frameHeight="241"/>
+	<SubTexture name="spoinky_left0015" x="3" y="1673" width="240" height="330" rotated="true" frameX="-4" frameY="0" frameWidth="334" frameHeight="241"/>
+	<SubTexture name="spoinky_left0016" x="975" y="1673" width="240" height="330" rotated="true" frameX="-4" frameY="0" frameWidth="334" frameHeight="241"/>
+	<SubTexture name="spoinky_left0017" x="246" y="1673" width="240" height="330" rotated="true" frameX="-4" frameY="0" frameWidth="334" frameHeight="241"/>
+	<SubTexture name="spoinky_left0018" x="2666" y="1673" width="239" height="330" rotated="true" frameX="-4" frameY="0" frameWidth="334" frameHeight="241"/>
+	<SubTexture name="spoinky_left0019" x="732" y="1673" width="240" height="330" rotated="true" frameX="-4" frameY="0" frameWidth="334" frameHeight="241"/>
+	<SubTexture name="spoinky_right0000" x="1267" y="1305" width="248" height="355" rotated="true" frameX="-10" frameY="-17" frameWidth="365" frameHeight="265"/>
+	<SubTexture name="spoinky_right0001" x="259" y="1305" width="248" height="365" rotated="true" frameX="0" frameY="-17" frameWidth="365" frameHeight="265"/>
+	<SubTexture name="spoinky_right0002" x="761" y="1305" width="247" height="365" rotated="true" frameX="0" frameY="-17" frameWidth="365" frameHeight="265"/>
+	<SubTexture name="spoinky_right0003" x="510" y="1305" width="248" height="365" rotated="true" frameX="0" frameY="-17" frameWidth="365" frameHeight="265"/>
+	<SubTexture name="spoinky_right0004" x="3" y="1305" width="253" height="364" rotated="true" frameX="0" frameY="-11" frameWidth="365" frameHeight="265"/>
+	<SubTexture name="spoinky_right0005" x="1011" y="1305" width="253" height="356" rotated="true" frameX="-8" frameY="-11" frameWidth="365" frameHeight="265"/>
+	<SubTexture name="spoinky_right0006" x="2386" y="943" width="258" height="359" rotated="true" frameX="-6" frameY="-6" frameWidth="365" frameHeight="265"/>
+	<SubTexture name="spoinky_right0007" x="2647" y="943" width="258" height="359" rotated="true" frameX="-6" frameY="-6" frameWidth="365" frameHeight="265"/>
+	<SubTexture name="spoinky_right0008" x="1858" y="943" width="261" height="359" rotated="true" frameX="-6" frameY="-3" frameWidth="365" frameHeight="265"/>
+	<SubTexture name="spoinky_right0009" x="2122" y="943" width="261" height="359" rotated="true" frameX="-6" frameY="-3" frameWidth="365" frameHeight="265"/>
+	<SubTexture name="spoinky_right0010" x="3" y="943" width="262" height="359" rotated="true" frameX="-5" frameY="-2" frameWidth="365" frameHeight="265"/>
+	<SubTexture name="spoinky_right0011" x="268" y="943" width="262" height="359" rotated="true" frameX="-5" frameY="-2" frameWidth="365" frameHeight="265"/>
+	<SubTexture name="spoinky_right0012" x="533" y="943" width="262" height="359" rotated="true" frameX="-5" frameY="-2" frameWidth="365" frameHeight="265"/>
+	<SubTexture name="spoinky_right0013" x="798" y="943" width="262" height="359" rotated="true" frameX="-5" frameY="-2" frameWidth="365" frameHeight="265"/>
+	<SubTexture name="spoinky_right0014" x="1063" y="943" width="262" height="359" rotated="true" frameX="-5" frameY="-2" frameWidth="365" frameHeight="265"/>
+	<SubTexture name="spoinky_right0015" x="1328" y="943" width="262" height="359" rotated="true" frameX="-5" frameY="-2" frameWidth="365" frameHeight="265"/>
+	<SubTexture name="spoinky_right0016" x="1593" y="943" width="262" height="359" rotated="true" frameX="-5" frameY="-2" frameWidth="365" frameHeight="265"/>
+	<SubTexture name="spoinky_right0017" x="1063" y="943" width="262" height="359" rotated="true" frameX="-5" frameY="-2" frameWidth="365" frameHeight="265"/>
+	<SubTexture name="spoinky_right0018" x="1328" y="943" width="262" height="359" rotated="true" frameX="-5" frameY="-2" frameWidth="365" frameHeight="265"/>
+	<SubTexture name="spoinky_right0019" x="1593" y="943" width="262" height="359" rotated="true" frameX="-5" frameY="-2" frameWidth="365" frameHeight="265"/>
+	<SubTexture name="spoinky_up0000" x="665" y="2356" width="213" height="348" frameX="-5" frameY="0" frameWidth="230" frameHeight="349"/>
+	<SubTexture name="spoinky_up0001" x="881" y="2356" width="213" height="348" frameX="-5" frameY="0" frameWidth="230" frameHeight="349"/>
+	<SubTexture name="spoinky_up0002" x="231" y="2356" width="214" height="348" frameX="-3" frameY="0" frameWidth="230" frameHeight="349"/>
+	<SubTexture name="spoinky_up0003" x="448" y="2356" width="214" height="348" frameX="-3" frameY="0" frameWidth="230" frameHeight="349"/>
+	<SubTexture name="spoinky_up0004" x="2549" y="2010" width="225" height="343" frameX="-1" frameY="-5" frameWidth="230" frameHeight="349"/>
+	<SubTexture name="spoinky_up0005" x="3" y="2356" width="225" height="343" frameX="-1" frameY="-5" frameWidth="230" frameHeight="349"/>
+	<SubTexture name="spoinky_up0006" x="3" y="2010" width="230" height="342" frameX="0" frameY="-6" frameWidth="230" frameHeight="349"/>
+	<SubTexture name="spoinky_up0007" x="236" y="2010" width="230" height="342" frameX="0" frameY="-6" frameWidth="230" frameHeight="349"/>
+	<SubTexture name="spoinky_up0008" x="469" y="2010" width="229" height="341" frameX="0" frameY="-7" frameWidth="230" frameHeight="349"/>
+	<SubTexture name="spoinky_up0009" x="1394" y="2010" width="228" height="341" frameX="0" frameY="-7" frameWidth="230" frameHeight="349"/>
+	<SubTexture name="spoinky_up0010" x="701" y="2010" width="228" height="342" frameX="0" frameY="-6" frameWidth="230" frameHeight="349"/>
+	<SubTexture name="spoinky_up0011" x="1625" y="2010" width="228" height="341" frameX="0" frameY="-7" frameWidth="230" frameHeight="349"/>
+	<SubTexture name="spoinky_up0012" x="932" y="2010" width="228" height="342" frameX="0" frameY="-6" frameWidth="230" frameHeight="349"/>
+	<SubTexture name="spoinky_up0013" x="1856" y="2010" width="228" height="341" frameX="0" frameY="-7" frameWidth="230" frameHeight="349"/>
+	<SubTexture name="spoinky_up0014" x="1163" y="2010" width="228" height="342" frameX="0" frameY="-7" frameWidth="230" frameHeight="349"/>
+	<SubTexture name="spoinky_up0015" x="2087" y="2010" width="228" height="341" frameX="0" frameY="-7" frameWidth="230" frameHeight="349"/>
+	<SubTexture name="spoinky_up0016" x="2318" y="2010" width="228" height="341" frameX="0" frameY="-7" frameWidth="230" frameHeight="349"/>
+	<SubTexture name="spoinky_up0017" x="1163" y="2010" width="228" height="342" frameX="0" frameY="-7" frameWidth="230" frameHeight="349"/>
+	<SubTexture name="spoinky_up0018" x="2087" y="2010" width="228" height="341" frameX="0" frameY="-7" frameWidth="230" frameHeight="349"/>
+	<SubTexture name="spoinky_up0019" x="2318" y="2010" width="228" height="341" frameX="0" frameY="-7" frameWidth="230" frameHeight="349"/>
+</TextureAtlas>

@@ -1,0 +1,339 @@
+{
+	"song": {
+		"speed": 3,
+		"stage": "carnival",
+		"player1": "bf",
+		"player2": "tricky",
+		"player3": null,
+		"events": [
+			[
+				86462.2641509434,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky-evil"
+					]
+				]
+			],
+			[
+				86745.2830188679,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky"
+					]
+				]
+			],
+			[
+				88301.8867924528,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky-evil"
+					]
+				]
+			],
+			[
+				88584.9056603774,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky"
+					]
+				]
+			],
+			[
+				90000,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky-evil"
+					]
+				]
+			],
+			[
+				90283.0188679245,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky"
+					]
+				]
+			],
+			[
+				90990.5660377359,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky-evil"
+					]
+				]
+			],
+			[
+				91132.0754716981,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky"
+					]
+				]
+			],
+			[
+				91415.0943396227,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky-evil"
+					]
+				]
+			],
+			[
+				91698.1132075472,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky"
+					]
+				]
+			],
+			[
+				93254.7169811321,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky-evil"
+					]
+				]
+			],
+			[
+				93962.2641509434,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky"
+					]
+				]
+			],
+			[
+				94528.3018867925,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky-evil"
+					]
+				]
+			],
+			[
+				95094.3396226415,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky"
+					]
+				]
+			],
+			[
+				105283.018867925,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky-evil"
+					]
+				]
+			],
+			[
+				105990.566037736,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky"
+					]
+				]
+			],
+			[
+				108254.716981132,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky-evil"
+					]
+				]
+			],
+			[
+				108679.245283019,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky"
+					]
+				]
+			],
+			[
+				109811.320754717,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky-evil"
+					]
+				]
+			],
+			[
+				110518.867924528,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky"
+					]
+				]
+			],
+			[
+				112358.490566038,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky-evil"
+					]
+				]
+			],
+			[
+				113207.547169811,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky"
+					]
+				]
+			],
+			[
+				115471.698113208,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky-evil"
+					]
+				]
+			],
+			[
+				115754.716981132,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky"
+					]
+				]
+			],
+			[
+				115896.226415094,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky-evil"
+					]
+				]
+			],
+			[
+				116179.245283019,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky"
+					]
+				]
+			],
+			[
+				120000,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky-evil"
+					]
+				]
+			],
+			[
+				120424.528301887,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky"
+					]
+				]
+			],
+			[
+				120849.056603774,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky-evil"
+					]
+				]
+			],
+			[
+				121132.075471698,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky"
+					]
+				]
+			],
+			[
+				122264.150943396,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky-evil"
+					]
+				]
+			],
+			[
+				123396.226415094,
+				[
+					[
+						"Change Character",
+						"dad",
+						"tricky"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 212,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "improbable outset"
+	}
+}

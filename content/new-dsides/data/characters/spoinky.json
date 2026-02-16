@@ -1,0 +1,93 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "spoinky_idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				90,
+				-20
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "spoinky_left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-60,
+				10
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "spoinky_right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-30,
+				83
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "spoinky_up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-40,
+				66
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "spoinky_down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				540,
+				501
+			],
+			"anim": "bonk",
+			"fps": 24,
+			"name": "spoinky_bonk",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/and/spoinky_boingy",
+	"position": [
+		10,
+		520
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "spoinky",
+	"gameover_character": null,
+	"vslice_sustains": true,
+	"flip_x": false,
+	"healthbar_colour": -4008487,
+	"camera_position": [
+		-319,
+		-294
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 6.1,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

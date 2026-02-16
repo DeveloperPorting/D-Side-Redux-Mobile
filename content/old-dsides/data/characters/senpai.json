@@ -1,0 +1,216 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				1,
+				0
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Senpai Idle"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				261,
+				-310
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "SENPAI DOWN NOTE",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				260,
+				230
+			],
+			"anim": "singDOWN-F",
+			"fps": 24,
+			"name": "SENPAI DOWN NOTE ALT",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				155,
+				-3
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "SENPAI UP NOTE",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				450,
+				160
+			],
+			"anim": "singUP-F",
+			"fps": 24,
+			"name": "SENPAI UP NOTE ALT",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				100,
+				190
+			],
+			"anim": "singRIGHT-F",
+			"fps": 24,
+			"name": "SENPAI RIGHT NOTE ALT",
+			"indices": []
+		},
+		{
+			"offsets": [
+				127,
+				-46
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			],
+			"name": "SENPAI LEFT NOTE"
+		},
+		{
+			"offsets": [
+				220,
+				180
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-F",
+			"indices": [],
+			"name": "SENPAI LEFT NOTE ALT"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				20,
+				-60
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "SENPAI RIGHT NOTE",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			]
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/senpai",
+	"position": [
+		780,
+		630
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "senpai-pixel",
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -13204511,
+	"camera_position": [
+		-512,
+		-266
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 4,
+	"scale": 6,
+	"_editor_isPlayer": false
+}
