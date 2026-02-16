@@ -113,13 +113,6 @@ class MusicBeatState extends FlxUIState
 			hitboxCam = FlxDestroyUtil.destroy(hitboxCam);
 		}
 	}
-
-	override function destroy()
-    {
-        super.destroy();
-		removeVirtualPad();
-		removeMobileControls();
-	}
 	#end
 	
 	public function initStateScript(?scriptName:String, callOnLoad:Bool = true):Bool
@@ -312,6 +305,11 @@ class MusicBeatState extends FlxUIState
 		scriptGroup = FlxDestroyUtil.destroy(scriptGroup);
 		
 		super.destroy();
+		
+		#if mobile
+		removeVirtualPad();
+		removeMobileControls();
+		#end
 	}
 	
 	override function closeSubState()
