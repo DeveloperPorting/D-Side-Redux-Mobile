@@ -867,6 +867,11 @@ class PlayState extends MusicBeatState
 		notes.cameras = [camHUD];
 		botplayTxt.cameras = [camHUD];
 		
+		#if mobile
+		 addMobileControls(false);
+	     hitbox.visible = false;
+		#end
+		
 		scripts.set('playFields', playFields);
 		scripts.set('grpNoteSplashes', grpNoteSplashes);
 		scripts.set('notes', notes);
@@ -1230,6 +1235,8 @@ class PlayState extends MusicBeatState
 			scripts.call('onStartCountdown', []);
 			return;
 		}
+		
+		#if mobile hitbox.visible = true; #end
 		
 		inCutscene = false;
 		
@@ -2865,6 +2872,8 @@ class PlayState extends MusicBeatState
 		camZooming = false;
 		inCutscene = false;
 		updateTime = false;
+		
+		#if mobile hitbox.visible = false; #end
 		
 		deathCounter = 0;
 		seenCutscene = false;
