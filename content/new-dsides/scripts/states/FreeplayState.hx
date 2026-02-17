@@ -1259,7 +1259,7 @@ function changeDiff(change:Int = 0) {
 		curDifficulty = 0;
 
 	var diff:String = Difficulty.difficulties[curDifficulty];
-	var newImage:FlxGraphic = Paths.image('menus/freeplay/freeplay_' + diff);
+	var newImage:FlxGraphic = Paths.image('menus/freeplay/freeplay_' + diff.toLowerCase());
 	if (sprDifficulty.graphic != newImage) {
 		sprDifficulty.loadGraphic(newImage);
 		sprDifficulty.x = leftArrow.x + 60;

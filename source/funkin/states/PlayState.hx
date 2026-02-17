@@ -3128,6 +3128,9 @@ class PlayState extends MusicBeatState
 		var left = controls.NOTE_LEFT || hitbox.buttonLeft.pressed;
 		var dodge = controls.NOTE_DODGE;
 		
+		// Holding for Mobile
+		var controlHoldArray:Array<Bool> = [left, down, up, right,dodge];
+		
 		// TO DO: Find a better way to handle controller inputs, this should work for now
 		if (ClientPrefs.controllerMode)
 		{
@@ -3151,7 +3154,7 @@ class PlayState extends MusicBeatState
 				{
 					if (daNote.isSustainNote
 						&& !daNote.blockHit
-						&& (FlxG.keys.anyPressed(keysArray[daNote.noteData]) || hitbox.anyPressed(keysArray[daNote.noteData]))
+						&& controlHoldArray[daNote.noteData]
 						&& daNote.canBeHit
 						&& !daNote.tooLate
 						&& !daNote.wasGoodHit) daNote.playField.noteHitCallback.dispatch(daNote, daNote.playField);
@@ -3166,7 +3169,7 @@ class PlayState extends MusicBeatState
 						if (daNote.isSustainNote
 							&& !daNote.blockHit
 							&& !daNote.ignoreNote
-							&& (!FlxG.keys.anyPressed(keysArray[daNote.noteData]) || !hitbox.anyPressed(keysArray[daNote.noteData]))
+							&& !controlHoldArray[daNote.noteData]
 							&& !endingSong
 							&& (daNote.tooLate || !daNote.wasGoodHit))
 						{
