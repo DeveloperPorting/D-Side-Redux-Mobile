@@ -3124,8 +3124,8 @@ class PlayState extends MusicBeatState
 		// HOLDING
 		var up = controls.NOTE_UP || hitbox.buttonUp.pressed;
 		var right = controls.NOTE_RIGHT || hitbox.buttonRight.pressed;
-		var down = controls.NOTE_DOWN || hitbox.buttonDown.pressed;
-		var left = controls.NOTE_LEFT || hitbox.buttonLeft.pressed;
+		var down = controls.NOTE_DOWN ||  hitbox.buttonDown.pressed;
+		var left = controls.NOTE_LEFT ||  hitbox.buttonLeft.pressed;
 		var dodge = controls.NOTE_DODGE;
 		
 		// Holding for Mobile
@@ -3135,7 +3135,7 @@ class PlayState extends MusicBeatState
 		if (ClientPrefs.controllerMode)
 		{
 			var controlArray:Array<Bool> = [
-				controls.NOTE_LEFT_P || hitbox.buttonLeft.justPressed,
+		    	controls.NOTE_LEFT_P || hitbox.buttonLeft.justPressed,
 				controls.NOTE_DOWN_P || hitbox.buttonDown.justPressed,
 				controls.NOTE_UP_P || hitbox.buttonUp.justPressed,
 				controls.NOTE_RIGHT_P || hitbox.buttonRight.justPressed
