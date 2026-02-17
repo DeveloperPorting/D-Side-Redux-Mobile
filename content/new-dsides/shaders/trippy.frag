@@ -1,6 +1,5 @@
 #pragma header
 
-vec2 iResolution = openfl_TextureSize;
 uniform float iTime;
 
 uniform float darkness;
@@ -36,6 +35,7 @@ float noise(vec2 p) {
 
 
 void main() {
+  vec2 iResolution = openfl_TextureSize;
   vec2 uv = openfl_TextureCoordv;
     
     vec4 color = texture2D(bitmap, uv);

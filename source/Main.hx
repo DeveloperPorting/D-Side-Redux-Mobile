@@ -72,6 +72,10 @@ class Main extends Sprite
 		
 		FlxG.signals.gameResized.add(onResize);
 		
+		#if android
+		FlxG.android.preventDefaultKeys = [BACK];
+		#end
+		
 		#if DISABLE_TRACES
 		haxe.Log.trace = (v:Dynamic, ?infos:haxe.PosInfos) -> {}
 		#end

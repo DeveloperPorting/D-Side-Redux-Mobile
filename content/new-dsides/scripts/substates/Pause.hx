@@ -15,6 +15,9 @@ import funkin.utils.CoolUtil;
 import funkin.scripting.PluginsManager;
 import flixel.addons.transition.FlxTransitionableState;
 
+import mobile.controls.MobileDPadMode;
+import mobile.controls.MobileActionMode;
+
 var controls = PlayerSettings.player1.controls;
 
 var allowControls = false;
@@ -156,6 +159,9 @@ function onCreate() {
 	port.setPosition(FlxG.width, 325);
 	add(port);
 	FlxTween.tween(port, {x: (FlxG.width - port.width)}, 0.5, {ease: FlxEase.quintOut});
+	
+	addVirtualPad(MobileDPadMode.UP_DOWN, MobileActionMode.A_B);
+	addVirtualPadCamera();
 
 	FlxTimer.wait(0.5, () -> {
 		changeSelection(0);
@@ -183,14 +189,14 @@ function onUpdate(elapsed) {
 	}
 
 	if (allowControls) {
-		if (FlxG.keys.justPressed.ESCAPE)
+		if (FlxG.keys.justPressed.ESCAPE || virtualPad.buttonB.justPressed)
 			close();
 
-		if (controls.UI_DOWN_P)
+		if (controls.UI_DOWN_P || virtualPad.buttonDown.justPressed)
 			changeSelection(1);
-		if (controls.UI_UP_P)
+		if (controls.UI_UP_P || virtualPad.buttonUp.justPressed)
 			changeSelection(-1);
-		if (controls.ACCEPT)
+		if (controls.ACCEPT || virtualPad.buttonA.justPressed)
 			choose();
 	}
 }
