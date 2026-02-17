@@ -99,6 +99,9 @@ class GameOverSubstate extends MusicBeatSubstate
 			FlxG.camera.follow(camFollow, LOCKON, 0);
 		}
 		
+		addVirtualPad(NONE, A_B);
+    	addVirtualPadCamera();
+		
 		super.create();
 		
 		PlayState.instance?.scripts.call('onGameOverPost', []);
@@ -132,12 +135,12 @@ class GameOverSubstate extends MusicBeatSubstate
 		PlayState.instance?.scripts.call('onUpdate', [elapsed]);
 		super.update(elapsed);
 		
-		if (controls.ACCEPT)
+		if (controls.ACCEPT || virtualPad.buttonA.justPressed)
 		{
 			if (PlayState.instance?.scripts.call('onGameOverConfirm', []) != ScriptConstants.STOP_FUNC) endBullshit();
 		}
 		
-		if (controls.BACK)
+		if (controls.BACK || virtualPad.buttonB.justPressed)
 		{
 			if (PlayState.instance?.scripts.call('onGameOverCancel', []) != ScriptConstants.STOP_FUNC)
 			{

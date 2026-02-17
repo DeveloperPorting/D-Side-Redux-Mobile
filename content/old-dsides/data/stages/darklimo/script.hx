@@ -9,7 +9,7 @@ function onLoad()
     for (i in 0...4)
     {
         var firework:FlxSprite = new FlxSprite((400 * i) - 300, -300);
-        firework.frames = Paths.getSparrowAtlas('backgrounds/week4//firework' + i);
+        firework.frames = Paths.getSparrowAtlas('backgrounds/week4/firework' + i);
         firework.animation.addByIndices('firework', "Firework" + i, [0, 2, 4, 5, 6, 7, 8, 10, 11, 13, 14, 15, 16, 17, 18], "", 24, false);
         firework.animation.play('firework');
         firework.scrollFactor.set(0.2, 0.2);

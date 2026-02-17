@@ -3,7 +3,7 @@ import funkin.objects.Bopper;
 
 function onLoad()
 {
-    var bg:BGSprite = new BGSprite('backgrounds/week5/evilbg', -601, -641, 0.5, 0.5);
+    var bg:BGSprite = new BGSprite('backgrounds/week5/evilBG', -601, -641, 0.5, 0.5);
     add(bg);
     audience2 = new BGSprite('backgrounds/week5/evilupperBop', -181, 254, 0.5, 0.5, ['Upper Crowd BobEvil']);
     add(audience2);

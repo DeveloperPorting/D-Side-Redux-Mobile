@@ -153,6 +153,9 @@ class PauseSubState extends MusicBeatSubstate
 		regenMenu();
 		cameras = [cam];
 		
+		addVirtualPad(UP_DOWN, A);
+    	addVirtualPadCamera();
+		
 		super.create();
 		
 		scriptGroup.call('onCreatePost', []);
@@ -168,11 +171,11 @@ class PauseSubState extends MusicBeatSubstate
 		
 		if (skipTimeText != null && skipTimeTracker != null) updateSkipTextStuff();
 		
-		if (controls.UI_UP_P)
+		if (controls.UI_UP_P || virtualPad.buttonUp.justPressed)
 		{
 			changeSelection(-1);
 		}
-		if (controls.UI_DOWN_P)
+		if (controls.UI_DOWN_P || virtualPad.buttonDown.justPressed)
 		{
 			changeSelection(1);
 		}
@@ -181,20 +184,20 @@ class PauseSubState extends MusicBeatSubstate
 		switch (daSelected)
 		{
 			case 'Skip Time':
-				if (controls.UI_LEFT_P)
+				if (controls.UI_LEFT_P || virtualPad.buttonLeft.justPressed)
 				{
 					FlxG.sound.play(Paths.sound('scrollMenu'), 0.4);
 					curTime -= 1000;
 					holdTime = 0;
 				}
-				if (controls.UI_RIGHT_P)
+				if (controls.UI_RIGHT_P || virtualPad.buttonRight.justPressed)
 				{
 					FlxG.sound.play(Paths.sound('scrollMenu'), 0.4);
 					curTime += 1000;
 					holdTime = 0;
 				}
 				
-				if (controls.UI_LEFT || controls.UI_RIGHT)
+				if ((controls.UI_LEFT || virtualPad.buttonLeft.justPressed) || (controls.UI_RIGHT || virtualPad.buttonRight.justPressed))
 				{
 					holdTime += elapsed;
 					if (holdTime > 0.5)
@@ -208,7 +211,7 @@ class PauseSubState extends MusicBeatSubstate
 				}
 		}
 		
-		if (controls.ACCEPT)
+		if (controls.ACCEPT || virtualPad.buttonA.justPressed)
 		{
 			if (menuItems == difficultyChoices)
 			{

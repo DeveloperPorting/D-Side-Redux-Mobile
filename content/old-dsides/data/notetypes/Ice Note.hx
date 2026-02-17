@@ -140,9 +140,9 @@ function onUpdate(elapsed) {
 
 function onKeyPress(key) {
 	if (isFrozen && keycooldown == 0) {
-		if (frozenCounter % 2 == 0 && controls.NOTE_LEFT_P)
+		if (frozenCounter % 2 == 0 && (controls.NOTE_LEFT_P || hitbox.buttonLeft.justPressed))
 			struggle();
-		else if (controls.NOTE_RIGHT_P)
+		else if (controls.NOTE_RIGHT_P || hitbox.buttonRight.justPressed)
 			struggle();
 
 		leftReceptor.color = frozenCounter % 2 == 0 ? FlxColor.WHITE : 0xFF4a4a4a;
