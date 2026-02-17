@@ -26,14 +26,6 @@ jobs:
             export/release/android/obj/
           restore-keys: |
             cache-android-night 
-      - name: Install Libraries
-        run: |
-          haxelib setup ~/haxelib
-          haxelib install hxcpp > /dev/null
-          haxelib install hxpkg --global
-          haxelib run hxpkg setup --global
-          haxelib run hxpkg install
-          haxelib list
       - name: Configure Android
         run: |
           haxelib run lime setup android
