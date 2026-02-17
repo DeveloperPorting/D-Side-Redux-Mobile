@@ -3122,20 +3122,20 @@ class PlayState extends MusicBeatState
 	function keyShit():Void
 	{
 		// HOLDING
-		var up = controls.NOTE_UP || hitbox.buttonUp.pressed;
-		var right = controls.NOTE_RIGHT || hitbox.buttonRight.pressed;
-		var down = controls.NOTE_DOWN || hitbox.buttonDown.pressed;
-		var left = controls.NOTE_LEFT || hitbox.buttonLeft.pressed;
+		var up = controls.NOTE_UP || hitbox.buttonUp.justPressed;
+		var right = controls.NOTE_RIGHT || hitbox.buttonRight.justPressed;
+		var down = controls.NOTE_DOWN || hitbox.buttonDown.justPressed;
+		var left = controls.NOTE_LEFT || hitbox.buttonLeft.justPressed;
 		var dodge = controls.NOTE_DODGE;
 		
 		// TO DO: Find a better way to handle controller inputs, this should work for now
 		if (ClientPrefs.controllerMode)
 		{
 			var controlArray:Array<Bool> = [
-				controls.NOTE_LEFT_P || hitbox.buttonLeft.justPressed,
-				controls.NOTE_DOWN_P || hitbox.buttonDown.justPressed,
-				controls.NOTE_UP_P || hitbox.buttonUp.justPressed,
-				controls.NOTE_RIGHT_P || hitbox.buttonRight.justPressed
+				controls.NOTE_LEFT_P || hitbox.buttonLeft.pressed,
+				controls.NOTE_DOWN_P || hitbox.buttonDown.pressed,
+				controls.NOTE_UP_P || hitbox.buttonUp.pressed,
+				controls.NOTE_RIGHT_P || hitbox.buttonRight.pressed
 			];
 			if (controlArray.contains(true)) for (i in 0...controlArray.length)
 				if (controlArray[i]) onKeyPress(new KeyboardEvent(KeyboardEvent.KEY_DOWN, true, true, -1, keysArray[i][0]));
