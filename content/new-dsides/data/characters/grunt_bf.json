@@ -212,7 +212,7 @@
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters\\BF/grunt",
+	"image": "characters/BF/grunt",
 	"position": [
 		20,
 		320

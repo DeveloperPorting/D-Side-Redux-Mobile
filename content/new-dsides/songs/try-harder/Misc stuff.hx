@@ -107,7 +107,7 @@ function onEvent(eventName, value1, value2) {
 
                 case 'text 2':
                     var username:String = 'BOYFRIEND';
-                    if(DiscordClient.username != 'Unknown') username = DiscordClient.username;
+                    #if desktop if(DiscordClient.username != 'Unknown') username = DiscordClient.username; #end
                     textevil.text = "Breaking a sweat already..? \nhere, no need to thank me... \n" + username + ".";
                 case 'text 4':
                     playHUD.visible = true;

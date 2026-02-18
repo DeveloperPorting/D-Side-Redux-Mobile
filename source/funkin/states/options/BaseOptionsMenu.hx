@@ -112,6 +112,9 @@ class BaseOptionsMenu extends MusicBeatSubstate
 			updateTextFrom(optionsArray[i]);
 		}
 		
+		addVirtualPad(LEFT_FULL, A_B_C);
+    	addVirtualPadCamera();
+		
 		changeSelection();
 		reloadCheckboxes();
 		
@@ -137,16 +140,16 @@ class BaseOptionsMenu extends MusicBeatSubstate
 	
 	override function update(elapsed:Float)
 	{
-		if (controls.UI_UP_P)
+		if (controls.UI_UP_P || virtualPad.buttonUp.justPressed)
 		{
 			changeSelection(-1);
 		}
-		if (controls.UI_DOWN_P)
+		if (controls.UI_DOWN_P || virtualPad.buttonDown.justPressed)
 		{
 			changeSelection(1);
 		}
 		
-		if (controls.BACK)
+		if (controls.BACK || virtualPad.buttonB.justPressed)
 		{
 			close();
 			FlxG.sound.play(Paths.sound('cancelMenu'));
@@ -162,7 +165,7 @@ class BaseOptionsMenu extends MusicBeatSubstate
 			
 			if (usesCheckbox)
 			{
-				if (controls.ACCEPT)
+				if (controls.ACCEPT || virtualPad.buttonA.justPressed)
 				{
 					FlxG.sound.play(Paths.sound('scrollMenu'));
 					curOption.setValue((curOption.getValue() == true) ? false : true);
@@ -172,13 +175,13 @@ class BaseOptionsMenu extends MusicBeatSubstate
 			}
 			else if (curOption.type == 'button')
 			{
-				if (controls.ACCEPT) curOption.callback();
+				if (controls.ACCEPT || virtualPad.buttonA.justPressed) curOption.callback();
 			}
 			else if (curOption.type != 'label')
 			{
-				if (controls.UI_LEFT || controls.UI_RIGHT)
+				if ((controls.UI_LEFT || virtualPad.buttonLeft.pressed) || (controls.UI_RIGHT || virtualPad.buttonRight.pressed))
 				{
-					var pressed = (controls.UI_LEFT_P || controls.UI_RIGHT_P);
+					var pressed = ((controls.UI_LEFT_P || virtualPad.buttonLeft.justPressed) || (controls.UI_RIGHT_P || virtualPad.buttonRight.justPressed));
 					if (holdTime > 0.5 || pressed)
 					{
 						if (pressed)
@@ -186,7 +189,7 @@ class BaseOptionsMenu extends MusicBeatSubstate
 							var add:Dynamic = null;
 							if (curOption.type != 'string')
 							{
-								add = controls.UI_LEFT ? -curOption.changeValue : curOption.changeValue;
+								add = (controls.UI_LEFT || virtualPad.buttonLeft.pressed) ? -curOption.changeValue : curOption.changeValue;
 							}
 							
 							switch (curOption.type)
@@ -209,7 +212,7 @@ class BaseOptionsMenu extends MusicBeatSubstate
 									
 								case 'string':
 									var num:Int = curOption.curOption; // lol
-									if (controls.UI_LEFT_P) --num;
+									if (controls.UI_LEFT_P || virtualPad.buttonLeft.justPressed) --num;
 									else num++;
 									
 									if (num < 0)
@@ -253,13 +256,13 @@ class BaseOptionsMenu extends MusicBeatSubstate
 						holdTime += elapsed;
 					}
 				}
-				else if (controls.UI_LEFT_R || controls.UI_RIGHT_R)
+				else if ((controls.UI_LEFT_R || virtualPad.buttonLeft.justReleased) || (controls.UI_RIGHT_R || virtualPad.buttonRight.justReleased))
 				{
 					clearHold();
 				}
 			}
 			
-			if (controls.RESET)
+			if (controls.RESET || virtualPad.buttonC.justPressed)
 			{
 				for (i in 0...optionsArray.length)
 				{

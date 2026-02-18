@@ -161,7 +161,14 @@ function onCreate() {
 	FlxTween.tween(port, {x: (FlxG.width - port.width)}, 0.5, {ease: FlxEase.quintOut});
 	
 	addVirtualPad(MobileDPadMode.UP_DOWN, MobileActionMode.A_B);
-	addVirtualPadCamera();
+	virtualPad.buttonUp.x = virtualPad.buttonDown.x -= 200;
+	virtualPad.buttonUp.y = virtualPad.buttonDown.y -= 350;
+	virtualPad.buttonA.x = virtualPad.buttonB.x += FlxG.width;
+	//virtualPad.buttonA.y = virtualPad.buttonB.y += 325;
+	FlxTween.tween(virtualPad.buttonUp, {alpha: 0.5, x: 0, y: FlxG.height - 255}, 0.3, {ease: FlxEase.quintOut, startDelay: (0.05 * 1)});
+	FlxTween.tween(virtualPad.buttonDown, {alpha: 0.5, x: 0, y: FlxG.height - 135}, 0.3, {ease: FlxEase.quintOut, startDelay: (0.05 * 2)});
+	FlxTween.tween(virtualPad.buttonA, {x: FlxG.width - 132}, 0.5, {ease: FlxEase.quintOut});
+	FlxTween.tween(virtualPad.buttonB, {x: FlxG.width - 258}, 0.5, {ease: FlxEase.quintOut});
 
 	FlxTimer.wait(0.5, () -> {
 		changeSelection(0);
@@ -176,6 +183,7 @@ function onCreate() {
 
 	songtxt = PluginsManager.callPluginFunc('Utils', 'menuIntroCard', ["Breakfast", 'selora789', [32, 0]]);
 	add(songtxt);
+	addVirtualPadCamera();
 }
 
 function onUpdate(elapsed) {
@@ -278,7 +286,11 @@ function visualDeath() {
 	FlxTween.tween(bBox, {x: -bBox.width}, 0.5, {ease: FlxEase.quintIn});
 	FlxTween.tween(tBox, {x: 1280}, 0.5, {ease: FlxEase.quintIn});
 	for (i in buttons.members)
-		FlxTween.tween(i, {x: i.x - i.width * 4}, 0.3, {ease: FlxEase.quintIn, startDelay: 0.05 * i.ID});
+		FlxTween.tween(i, {x: i.x - i.width * 4}, 0.3, {ease: FlxEase.quintIn, startDelay: 0.05 * i.ID});	
+	FlxTween.tween(virtualPad.buttonUp, {x: virtualPad.buttonUp.x - virtualPad.buttonUp.width * 4}, 0.3, {ease: FlxEase.quintIn, startDelay: 0.05 * 1});
+	FlxTween.tween(virtualPad.buttonDown, {x: virtualPad.buttonDown.x - virtualPad.buttonDown.width * 4}, 0.3, {ease: FlxEase.quintIn, startDelay: 0.05 * 2});
+	FlxTween.tween(virtualPad.buttonA, {x: (FlxG.width)}, 0.5, {ease: FlxEase.quintIn});
+	FlxTween.tween(virtualPad.buttonB, {x: (FlxG.width)}, 0.5, {ease: FlxEase.quintIn});
 	FlxTween.tween(p, {y: -p.height}, 0.5, {ease: FlxEase.quartIn});
 	bTxt.resetText('');
 	FlxTween.tween(tTxt, {x: tBox.width}, 0.5, {ease: FlxEase.quintIn});
