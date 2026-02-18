@@ -97,7 +97,7 @@ class FunkinAssets
 	 */
 	public static function getBitmapData(path:String, useCache:Bool = true):Null<BitmapData>
 	{
-		var bitmap:Null<BitmapData> = null;
+		var bitmap:Null<FlxGraphic> = null;
 		#if (MODS_ALLOWED || ASSET_REDIRECT) if (Assets.exists(path, IMAGE)) bitmap = FlxGraphic.fromBitmapData(Assets.getBitmapData(path, useCache));
 		else #end if (Assets.exists(path, IMAGE)) bitmap = Assets.getBitmapData(path, useCache);
 		
@@ -164,7 +164,7 @@ class FunkinAssets
 			return cache.currentTrackedGraphics.get(key);
 		}
 		
-		var bitmap:Null<BitmapData> = getBitmapData(key);
+		var bitmap:Null<FlxGraphic> = getBitmapData(key);
 		
 		if (bitmap != null)
 		{
