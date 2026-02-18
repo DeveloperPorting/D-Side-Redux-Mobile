@@ -95,7 +95,7 @@ class FunkinAssets
 	 * 
 	 * Will return null in the case it cannot be found.
 	 */
-	public static function getBitmapData(path:String, useCache:Bool = true):Null<BitmapData>
+	public static function getBitmapData(path:String, useCache:Bool = true):Null<FlxGraphic>
 	{
 		var bitmap:Null<FlxGraphic> = null;
 		#if (MODS_ALLOWED || ASSET_REDIRECT) if (Assets.exists(path)) bitmap = FlxGraphic.fromBitmapData(Assets.getBitmapData(path));
