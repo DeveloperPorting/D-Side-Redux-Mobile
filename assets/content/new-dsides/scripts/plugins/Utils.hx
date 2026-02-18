@@ -19,6 +19,7 @@ import funkin.Mods;
 import funkin.backend.Conductor;
 import funkin.utils.CameraUtil;
 import funkin.utils.WindowUtil;
+import openfl.Assets;
 
 /**
  * [onLoad()]

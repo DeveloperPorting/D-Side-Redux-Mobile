@@ -3,6 +3,7 @@ import sys.io.File;
 import funkin.backend.Conductor;
 import flixel.text.FlxText;
 import funkin.scripting.PluginsManager;
+import openfl.Assets;
 
 typedef LyricData = {
 	lyric:String,
@@ -11,7 +12,7 @@ typedef LyricData = {
 }
 
 function loadJson() {
-	var rawJson = File.getContent(Paths.modFolders(StringTools.replace('songs/' + PlayState.SONG.song.toLowerCase() + '/data/lyrics.json', ' ', '-')));
+	var rawJson = Assets.getText(Paths.modFolders(StringTools.replace('songs/' + PlayState.SONG.song.toLowerCase() + '/data/lyrics.json', ' ', '-')));
 	var data = Json.parse(rawJson);
 
 	return data;
