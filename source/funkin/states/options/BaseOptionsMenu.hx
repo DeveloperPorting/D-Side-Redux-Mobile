@@ -112,7 +112,7 @@ class BaseOptionsMenu extends MusicBeatSubstate
 			updateTextFrom(optionsArray[i]);
 		}
 		
-		addVirtualPad(FULL, A_B_C);
+		addVirtualPad(LEFT_FULL, A_B_C);
     	addVirtualPadCamera();
 		
 		changeSelection();
