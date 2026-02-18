@@ -19,6 +19,7 @@ import funkin.Mods;
 import funkin.backend.Conductor;
 import funkin.utils.CameraUtil;
 import funkin.utils.WindowUtil;
+import openfl.Assets;
 
 /**
  * [onLoad()]
@@ -223,7 +224,7 @@ function onStateSwitchPost(state) {
 */
 // Loads song json stuff, used for lyrics & metadata stuff
 function loadJson(name, song) {
-	var rawJson = File.getContent(Paths.modFolders(StringTools.replace('songs/' + song + '/data/' + name + '.json', ' ', '-')));
+	var rawJson = Assets.getText(Paths.modFolders(StringTools.replace('songs/' + song + '/data/' + name + '.json', ' ', '-')));
 	var data = Json.parse(rawJson);
 	return data;
 }
