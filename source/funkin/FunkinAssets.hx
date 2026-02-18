@@ -104,6 +104,15 @@ class FunkinAssets
 		return bitmap;
 	}
 	
+	public static function getBitmapDataEx(path:String, useCache:Bool = true):Null<BitmapData>
+	{
+		var bitmap:Null<BitmapData> = null;
+		#if (MODS_ALLOWED || ASSET_REDIRECT) if (Assets.exists(path, IMAGE)) bitmap = Assets.getBitmapData(path, useCache);
+		else #end if (Assets.exists(path, IMAGE)) bitmap = Assets.getBitmapData(path, useCache);
+		
+		return bitmap;
+	}
+	
 	/**
 	 *	Returns whether a given path exists.
 	 */
@@ -177,6 +186,27 @@ class FunkinAssets
 		}
 	}
 	
+	public static function getGraphicUnsafeEx(key:String, useCache:Bool = true, allowGPU:Bool = true):Null<FlxGraphic>
+	{
+		if (useCache && cache.currentTrackedGraphics.exists(key))
+		{
+			cache.localTrackedAssets.push(key);
+			return cache.currentTrackedGraphics.get(key);
+		}
+		
+		var bitmap:Null<BitmapData> = getBitmapDataEx(key);
+		
+		if (bitmap != null)
+		{
+			return cache.cacheBitmap(key, bitmap, allowGPU);
+		}
+		else
+		{
+			Logger.log('graphic ($key) was not found', WARN);
+			return null;
+		}
+	}
+	
 	/**
 	 * retrieves a flxgraphic instance from key.
 	 * 
@@ -186,6 +216,20 @@ class FunkinAssets
 	public static function getGraphic(key:String, useCache:Bool = true, allowGPU:Bool = true):FlxGraphic
 	{
 		final graphic:Null<FlxGraphic> = getGraphicUnsafe(key, useCache);
+		
+		if (graphic != null)
+		{
+			return graphic;
+		}
+		
+		Logger.log('graphic ($key) was not found. Returning flixel-logo instead');
+		
+		return FlxG.bitmap.add('flixel/images/logo/default.png');
+	}
+	
+	public static function getGraphicEx(key:String, useCache:Bool = true, allowGPU:Bool = true):FlxGraphic
+	{
+		final graphic:Null<FlxGraphic> = getGraphicUnsafeEx(key, useCache);
 		
 		if (graphic != null)
 		{

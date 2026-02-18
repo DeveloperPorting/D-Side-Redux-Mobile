@@ -2,7 +2,7 @@ package funkin.objects;
 
 import flixel.system.FlxAssets.FlxSoundAsset;
 
-import flixel.graphics.FlxGraphic;
+import openfl.display.Bitmap;
 
 import flixel.FlxG;
 import flixel.system.ui.FlxSoundTray;
@@ -31,22 +31,22 @@ class FunkinSoundTray extends FlxSoundTray
 		super();
 		removeChildren();
 		
-		var bg:FlxGraphic = new FlxGraphic(FunkinAssets.getBitmapData(Paths.getPath('images/soundtray/volumebox.png')));
+		var bg:Bitmap = new Bitmap(FunkinAssets.getBitmapDataEx(Paths.getPath('images/soundtray/volumebox.png')));
 		bg.scaleX = graphicScale;
 		bg.scaleY = graphicScale;
-		bg.antialiasing = ClientPrefs.globalAntialiasing;
+		bg.smoothing = ClientPrefs.globalAntialiasing;
 		addChild(bg);
 		
 		y = -height;
 		visible = false;
 		
 		// makes an alpha'd version of all the bars (bar_10.png)
-		var backingBar:FlxGraphic = new FlxGraphic(FunkinAssets.getBitmapData(Paths.getPath('images/soundtray/bars_10.png')));
+		var backingBar:Bitmap = new Bitmap(FunkinAssets.getBitmapDataEx(Paths.getPath('images/soundtray/bars_10.png')));
 		backingBar.x = 9;
 		backingBar.y = 5;
 		backingBar.scaleX = graphicScale;
 		backingBar.scaleY = graphicScale;
-		backingBar.antialiasing = ClientPrefs.globalAntialiasing;
+		backingBar.smoothing = ClientPrefs.globalAntialiasing;
 		addChild(backingBar);
 		backingBar.alpha = 0.4;
 		
@@ -58,12 +58,12 @@ class FunkinSoundTray extends FlxSoundTray
 		// we are trying to get assets bar_1-10
 		for (i in 1...11)
 		{
-			var bar:FlxGraphic = new FlxGraphic(FunkinAssets.getBitmapData(Paths.getPath('images/soundtray/bars_$i.png')));
+			var bar:Bitmap = new Bitmap(FunkinAssets.getBitmapDataEx(Paths.getPath('images/soundtray/bars_$i.png')));
 			bar.x = 9;
 			bar.y = 5;
 			bar.scaleX = graphicScale;
 			bar.scaleY = graphicScale;
-			bar.antialiasing = ClientPrefs.globalAntialiasing;
+			bar.smoothing = ClientPrefs.globalAntialiasing;
 			addChild(bar);
 			_bars.push(bar);
 		}
@@ -115,11 +115,11 @@ class FunkinSoundTray extends FlxSoundTray
 	function checkAntialiasing()
 	{
 		// Apply anti-aliasing according to the Psych save file
-		if ((cast __children[0] : FlxGraphic).antialiasing != ClientPrefs.globalAntialiasing)
+		if ((cast __children[0] : Bitmap).smoothing != ClientPrefs.globalAntialiasing)
 		{
 			for (child in __children)
 			{
-				(cast child : FlxGraphic).antialiasing = ClientPrefs.globalAntialiasing;
+				(cast child : Bitmap).smoothing = ClientPrefs.globalAntialiasing;
 			}
 		}
 	}
