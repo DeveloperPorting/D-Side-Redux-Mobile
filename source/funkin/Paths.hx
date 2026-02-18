@@ -52,18 +52,18 @@ class Paths
 	 * @return The path to the file.
 	 */
 	public static function getPath(file:String, ?parentFolder:String, checkMods:Bool = false):String
-{
-    if (parentFolder != null) file = '$parentFolder/$file';
-    
-    if (checkMods)
-    {
-        // Esta linha abaixo é a que faz a mágica acontecer
-        final modPath:String = modFolders(file);
-        if (FunkinAssets.exists(modPath)) return modPath;
-    }
-    
-    return getCorePath(file);
-}
+	{
+	    if (parentFolder != null) file = '$parentFolder/$file';
+	    
+	    if (checkMods)
+	    {
+	        // Esta linha abaixo é a que faz a mágica acontecer
+	        final modPath:String = modFolders(file);
+	        if (FunkinAssets.exists(modPath)) return modPath;
+	    }
+	    
+	    return getCorePath(file);
+	}
 	
 	/**
 	 * Inserts the primary asset path to the given file path
