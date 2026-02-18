@@ -30,7 +30,7 @@ class Paths
 	/**
 	 * Mod directory
 	 */
-	public static inline final MODS_DIRECTORY = #if ASSET_REDIRECT trail + 'content' #else 'assets/content' #end;
+	public static inline final MODS_DIRECTORY = 'assets/content';
 	
 	/**
 	 * Default font used by the game for most things.
@@ -53,14 +53,11 @@ class Paths
 	{
 		if (parentFolder != null) file = '$parentFolder/$file';
 		
-		#if MODS_ALLOWED
 		if (checkMods)
 		{
-			final modPath:String = modFolders(file);
-			
+			final modPath:String = MODS_DIRECTORY + '/' + 'new-dsides/' + file;
 			if (FunkinAssets.exists(modPath)) return modPath;
 		}
-		#end
 		
 		#if ASSET_REDIRECT
 		final embedPath = getCorePath().replace(CORE_DIRECTORY, trail + 'assets/embeds') + file;
@@ -387,34 +384,19 @@ class Paths
 	 * 
 	 * `content/globalMods/`, `content/`, `content/currentMod/`.
 	 */
-	public static function listAllFilesInDirectory(directory:String, checkMods:Bool = true) // based of psychs Mods.directoriesWithFile
+	public static function listAllFilesInDirectory(directory:String, checkMods:Bool = true)
 	{
-		// todo maybe make this recursive ?
 		var folders:Array<String> = [];
 		var files:Array<String> = [];
 		
 		if (FunkinAssets.exists(getCorePath(directory))) folders.push(getCorePath(directory));
 		
-		#if MODS_ALLOWED
 		if (checkMods)
 		{
-			for (mod in Mods.globalMods)
-			{
-				final folder = mods('$mod/$directory');
-				if (FunkinAssets.exists(folder) && !folders.contains(folder)) folders.push(folder);
-			}
+			var path:String = MODS_DIRECTORY + '/' + directory;
 			
-			final folder = mods(directory);
-			if (FunkinAssets.exists(folder) && !folders.contains(folder)) folders.push(folder);
-			
-			if (Mods.currentModDirectory != null && Mods.currentModDirectory.length > 0)
-			{
-				final folder = mods('${Mods.currentModDirectory}/$directory');
-				if (FunkinAssets.exists(folder) && !folders.contains(folder)) folders.push(folder);
-			}
+			if (FunkinAssets.exists(path) && !folders.contains(path)) folders.push(path);
 		}
-		#end
-		
 		for (folder in folders)
 		{
 			for (file in FunkinAssets.readDirectory(folder))
@@ -441,22 +423,18 @@ class Paths
 	 */
 	public static function modFolders(key:String):String
 	{
+		var myMod:String = 'new-dsides';
+		final modFile:String = mods(myMod + '/' + key);
+		
+		if (FunkinAssets.exists(modFile)) return modFile;
+		
 		if (Mods.currentModDirectory != null && Mods.currentModDirectory.length > 0)
 		{
 			final fileToCheck:String = mods(Mods.currentModDirectory + '/' + key);
-			// trace(fileToCheck);
-			if (FunkinAssets.exists(fileToCheck))
-			{
-				return fileToCheck;
-			}
-		}
-		
-		for (mod in Mods.globalMods)
-		{
-			final fileToCheck:String = mods(mod + '/' + key);
 			if (FunkinAssets.exists(fileToCheck)) return fileToCheck;
 		}
+		
 		return mods(key);
-	}
 	#end
+	}
 }

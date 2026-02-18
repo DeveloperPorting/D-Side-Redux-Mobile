@@ -89,7 +89,9 @@ class Mods
 	/**
 	 * The primary loaded mod's directory
 	 */
-	public static var currentModDirectory:Null<String> = '';
+	public static inline final MODS_DIRECTORY = 'assets/content';
+	
+	public static var currentModDirectory:Null<String> = 'new-dsides';
 	
 	/**
 	 * The primary loaded mod's config data
@@ -148,17 +150,18 @@ class Mods
 		var list:Array<String> = [];
 		#if MODS_ALLOWED
 		var modsFolder:String = Paths.mods();
-		if (FunkinAssets.exists(modsFolder))
-		{
-			for (folder in FunkinAssets.readDirectory(modsFolder))
+		/*	if (FunkinAssets.exists(modsFolder))
 			{
-				var path = haxe.io.Path.join([modsFolder, folder]);
-				if (FunkinAssets.isDirectory(path)
-					&& !ignoreModFolders.contains(folder.toLowerCase())
-					&& !list.contains(folder)) list.push(folder);
-			}
-		}
+				for (folder in FunkinAssets.readDirectory(modsFolder))
+				{
+					var path = haxe.io.Path.join([modsFolder, folder]);
+					if (FunkinAssets.isDirectory(path)
+						&& !ignoreModFolders.contains(folder.toLowerCase())
+						&& !list.contains(folder)) list.push(folder);
+				}
+		}*/
 		#end
+		list.push('new-dsides');
 		return list;
 	}
 	
@@ -191,30 +194,25 @@ class Mods
 	public static inline function directoriesWithFile(path:String, fileToFind:String, mods:Bool = true)
 	{
 		var foldersToCheck:Array<String> = [];
+		
 		if (FunkinAssets.exists(path + fileToFind)) foldersToCheck.push(path + fileToFind);
 		
-		#if MODS_ALLOWED
 		if (mods)
 		{
-			// Global mods first
-			for (mod in globalMods)
+			var modFolder:String = MODS_DIRECTORY + '/' + fileToFind;
+			
+			if (FunkinAssets.exists(modFolder) && !foldersToCheck.contains(modFolder))
 			{
-				var folder:String = Paths.mods(mod + '/' + fileToFind);
-				if (FunkinAssets.exists(folder) && !foldersToCheck.contains(folder)) foldersToCheck.push(folder);
+				foldersToCheck.push(modFolder);
 			}
 			
-			// Then "content/" main folder
-			var folder:String = Paths.mods(fileToFind);
-			if (FunkinAssets.exists(folder) && !foldersToCheck.contains(folder)) foldersToCheck.push(Paths.mods(fileToFind));
-			
-			// And lastly, the loaded mod's folder
-			if (Mods.currentModDirectory != null && Mods.currentModDirectory.length > 0)
+			var contentFolder:String = MODS_DIRECTORY + '/' + fileToFind;
+			if (FunkinAssets.exists(contentFolder) && !foldersToCheck.contains(contentFolder))
 			{
-				var folder:String = Paths.mods(Mods.currentModDirectory + '/' + fileToFind);
-				if (FunkinAssets.exists(folder) && !foldersToCheck.contains(folder)) foldersToCheck.push(folder);
+				foldersToCheck.push(contentFolder);
 			}
 		}
-		#end
+		
 		return foldersToCheck;
 	}
 	
@@ -223,7 +221,7 @@ class Mods
 		#if MODS_ALLOWED
 		if (folder == null) folder = Mods.currentModDirectory;
 		
-		var path = Paths.mods(folder + '/meta.json');
+		var path:String = MODS_DIRECTORY + '/' + 'new-dsides/meta.json';
 		if (FunkinAssets.exists(path))
 		{
 			final raw = FunkinAssets.getContent(path);
@@ -239,66 +237,31 @@ class Mods
 	
 	public static inline function parseList():ModsList
 	{
-		updateModList();
 		var list:ModsList = {enabled: [], disabled: [], all: []};
 		
-		#if MODS_ALLOWED
-		for (mod in CoolUtil.coolTextFile('modsList.txt'))
-		{
-			if (mod.trim().length < 1) continue;
-			
-			var dat = mod.split("|");
-			list.all.push(dat[0]);
-			if (dat[1] == "1") list.enabled.push(dat[0]);
-			else list.disabled.push(dat[0]);
-		}
-		#end
+		var modName:String = 'new-dsides';
+		
+		list.all.push(modName);
+		list.enabled.push(modName);
+		
 		return list;
 	}
 	
+	#if MODS_ALLOWED
 	public static function getListAsArray(?top:String = ''):Array<{folder:String, enabled:Bool}>
 	{
 		var list:Array<{folder:String, enabled:Bool}> = [];
-		var added:Array<String> = [];
-		if (top == null || top == '') top = currentModDirectory;
 		
-		if (top.length >= 1)
+		var modName:String = 'new-dsides';
+		
+		if (FunkinAssets.exists(MODS_DIRECTORY + '/' + modName))
 		{
-			if (FunkinAssets.exists(Paths.mods(top)) && FunkinAssets.isDirectory(Paths.mods(top)) && !added.contains(top))
-			{
-				added.push(top);
-				list.push({folder: top, enabled: true});
-			}
-		}
-		for (mod in CoolUtil.coolTextFile('modsList.txt'))
-		{
-			var dat:Array<String> = mod.split("|");
-			var folder:String = dat[0];
-			if (folder.trim().length > 0
-				&& FunkinAssets.exists(Paths.mods(folder))
-				&& FunkinAssets.isDirectory(Paths.mods(folder))
-				&& !added.contains(folder) && folder != top)
-			{
-				added.push(folder);
-				list.push({folder: folder, enabled: (dat[1] == "1")});
-			}
-		}
-		// Scan for folders that aren't on modsList.txt yet
-		for (folder in getModDirectories())
-		{
-			if (folder.trim().length > 0
-				&& FunkinAssets.exists(Paths.mods(folder))
-				&& FunkinAssets.isDirectory(Paths.mods(folder))
-				&& !ignoreModFolders.contains(folder.toLowerCase())
-				&& !added.contains(folder) && folder != top)
-			{
-				added.push(folder);
-				list.push({folder: folder, enabled: true});
-			}
+			list.push({folder: modName, enabled: true});
 		}
 		
 		return list;
 	}
+	#end
 	
 	public static function updateModList(top:String = '')
 	{
