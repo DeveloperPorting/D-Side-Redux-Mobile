@@ -657,8 +657,8 @@ function giveTrophy(trophyColor, skipAnim) {
 			}
 		});
 
-		WindowUtil.centerWindowOnPoint(FlxPoint.get(WindowUtil.monitorResolutionWidth / 2, WindowUtil.monitorResolutionHeight / 2));
-		var ogWinPos = [FlxG.stage.window.x, FlxG.stage.window.y];
+		//WindowUtil.centerWindowOnPoint(FlxPoint.get(WindowUtil.monitorResolutionWidth / 2, WindowUtil.monitorResolutionHeight / 2));
+		//var ogWinPos = [FlxG.stage.window.x, FlxG.stage.window.y];
 		var pos = [1100 - (150 * (trophyCount - 1)), 520];
 		var time = 4;
 
@@ -675,8 +675,8 @@ function giveTrophy(trophyColor, skipAnim) {
 			FlxTween.num(0, 1, 10, {
 				startDelay: 5,
 				onUpdate: (t) -> {
-					FlxG.stage.window.x = ogWinPos[0] + (FlxG.random.int(-50, 50) * t.value);
-					FlxG.stage.window.y = ogWinPos[1] + (FlxG.random.int(-50, 50) * t.value);
+					//FlxG.stage.window.x = ogWinPos[0] + (FlxG.random.int(-50, 50) * t.value);
+					//FlxG.stage.window.y = ogWinPos[1] + (FlxG.random.int(-50, 50) * t.value);
 				}
 			});
 
@@ -706,7 +706,7 @@ function giveTrophy(trophyColor, skipAnim) {
 
 			glitch.setGlitch(0);
 			abb.setChrom(0);
-			WindowUtil.centerWindowOnPoint(FlxPoint.get(WindowUtil.monitorResolutionWidth / 2, WindowUtil.monitorResolutionHeight / 2));
+			//WindowUtil.centerWindowOnPoint(FlxPoint.get(WindowUtil.monitorResolutionWidth / 2, WindowUtil.monitorResolutionHeight / 2));
 
 			FlxTween.tween(black, {alpha: 0}, 1);
 			FlxTween.tween(trophyTxt, {y: -trophyTxt.height}, 1, {ease: FlxEase.cubeIn});
