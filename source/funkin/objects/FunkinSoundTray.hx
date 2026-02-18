@@ -2,7 +2,7 @@ package funkin.objects;
 
 import flixel.system.FlxAssets.FlxSoundAsset;
 
-import openfl.display.Bitmap;
+import flixel.graphics.FlxGraphic;
 
 import flixel.FlxG;
 import flixel.system.ui.FlxSoundTray;
