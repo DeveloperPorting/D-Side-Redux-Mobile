@@ -148,12 +148,12 @@ class Mods
 		var list:Array<String> = [];
 		#if MODS_ALLOWED
 		var modsFolder:String = Paths.mods();
-		if (FileSystem.exists(modsFolder))
+		if (FunkinAssets.exists(modsFolder))
 		{
-			for (folder in FileSystem.readDirectory(modsFolder))
+			for (folder in FunkinAssets.readDirectory(modsFolder))
 			{
 				var path = haxe.io.Path.join([modsFolder, folder]);
-				if (FileSystem.isDirectory(path)
+				if (FunkinAssets.isDirectory(path)
 					&& !ignoreModFolders.contains(folder.toLowerCase())
 					&& !list.contains(folder)) list.push(folder);
 			}
@@ -191,7 +191,7 @@ class Mods
 	public static inline function directoriesWithFile(path:String, fileToFind:String, mods:Bool = true)
 	{
 		var foldersToCheck:Array<String> = [];
-		if (FileSystem.exists(path + fileToFind)) foldersToCheck.push(path + fileToFind);
+		if (FunkinAssets.exists(path + fileToFind)) foldersToCheck.push(path + fileToFind);
 		
 		#if MODS_ALLOWED
 		if (mods)
@@ -200,18 +200,18 @@ class Mods
 			for (mod in globalMods)
 			{
 				var folder:String = Paths.mods(mod + '/' + fileToFind);
-				if (FileSystem.exists(folder) && !foldersToCheck.contains(folder)) foldersToCheck.push(folder);
+				if (FunkinAssets.exists(folder) && !foldersToCheck.contains(folder)) foldersToCheck.push(folder);
 			}
 			
 			// Then "content/" main folder
 			var folder:String = Paths.mods(fileToFind);
-			if (FileSystem.exists(folder) && !foldersToCheck.contains(folder)) foldersToCheck.push(Paths.mods(fileToFind));
+			if (FunkinAssets.exists(folder) && !foldersToCheck.contains(folder)) foldersToCheck.push(Paths.mods(fileToFind));
 			
 			// And lastly, the loaded mod's folder
 			if (Mods.currentModDirectory != null && Mods.currentModDirectory.length > 0)
 			{
 				var folder:String = Paths.mods(Mods.currentModDirectory + '/' + fileToFind);
-				if (FileSystem.exists(folder) && !foldersToCheck.contains(folder)) foldersToCheck.push(folder);
+				if (FunkinAssets.exists(folder) && !foldersToCheck.contains(folder)) foldersToCheck.push(folder);
 			}
 		}
 		#end
@@ -264,7 +264,7 @@ class Mods
 		
 		if (top.length >= 1)
 		{
-			if (FileSystem.exists(Paths.mods(top)) && FileSystem.isDirectory(Paths.mods(top)) && !added.contains(top))
+			if (FunkinAssets.exists(Paths.mods(top)) && FunkinAssets.isDirectory(Paths.mods(top)) && !added.contains(top))
 			{
 				added.push(top);
 				list.push({folder: top, enabled: true});
@@ -275,8 +275,8 @@ class Mods
 			var dat:Array<String> = mod.split("|");
 			var folder:String = dat[0];
 			if (folder.trim().length > 0
-				&& FileSystem.exists(Paths.mods(folder))
-				&& FileSystem.isDirectory(Paths.mods(folder))
+				&& FunkinAssets.exists(Paths.mods(folder))
+				&& FunkinAssets.isDirectory(Paths.mods(folder))
 				&& !added.contains(folder) && folder != top)
 			{
 				added.push(folder);
@@ -287,8 +287,8 @@ class Mods
 		for (folder in getModDirectories())
 		{
 			if (folder.trim().length > 0
-				&& FileSystem.exists(Paths.mods(folder))
-				&& FileSystem.isDirectory(Paths.mods(folder))
+				&& FunkinAssets.exists(Paths.mods(folder))
+				&& FunkinAssets.isDirectory(Paths.mods(folder))
 				&& !ignoreModFolders.contains(folder.toLowerCase())
 				&& !added.contains(folder) && folder != top)
 			{
