@@ -98,8 +98,8 @@ class FunkinAssets
 	public static function getBitmapData(path:String, useCache:Bool = true):Null<BitmapData>
 	{
 		var bitmap:Null<FlxGraphic> = null;
-		#if (MODS_ALLOWED || ASSET_REDIRECT) if (Assets.exists(path, IMAGE)) bitmap = FlxGraphic.fromBitmapData(Assets.getBitmapData(path, useCache));
-		else #end if (Assets.exists(path, IMAGE)) bitmap = Assets.getBitmapData(path, useCache);
+		#if (MODS_ALLOWED || ASSET_REDIRECT) if (Assets.exists(path)) bitmap = FlxGraphic.fromBitmapData(Assets.getBitmapData(path));
+		else #end if (Assets.exists(path)) bitmap = FlxGraphic.fromBitmapData(Assets.getBitmapData(path));
 		
 		return bitmap;
 	}
@@ -112,7 +112,7 @@ class FunkinAssets
 		var exists:Bool = false;
 		
 		#if (MODS_ALLOWED || ASSET_REDIRECT)
-		if (Assets.exists(path, type)) exists = true;
+		if (Assets.exists(path)) exists = true;
 		else
 		#end
 		if (Assets.exists(path, type)) exists = true;
@@ -158,17 +158,17 @@ class FunkinAssets
 	 */
 	public static function getGraphicUnsafe(key:String, useCache:Bool = true, allowGPU:Bool = true):Null<FlxGraphic>
 	{
-		if (useCache && cache.currentTrackedGraphics.exists(key))
+		/*if (useCache && cache.currentTrackedGraphics.exists(key))
 		{
 			cache.localTrackedAssets.push(key);
 			return cache.currentTrackedGraphics.get(key);
-		}
+		}*/
 		
 		var bitmap:Null<FlxGraphic> = getBitmapData(key);
 		
 		if (bitmap != null)
 		{
-			return cache.cacheBitmap(key, bitmap, allowGPU);
+			return bitmap;
 		}
 		else
 		{
