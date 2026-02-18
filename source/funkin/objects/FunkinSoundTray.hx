@@ -34,7 +34,7 @@ class FunkinSoundTray extends FlxSoundTray
 		var bg:FlxGraphic = new FlxGraphic(FunkinAssets.getBitmapData(Paths.getPath('images/soundtray/volumebox.png')));
 		bg.scaleX = graphicScale;
 		bg.scaleY = graphicScale;
-		bg.smoothing = ClientPrefs.globalAntialiasing;
+		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		addChild(bg);
 		
 		y = -height;
@@ -46,7 +46,7 @@ class FunkinSoundTray extends FlxSoundTray
 		backingBar.y = 5;
 		backingBar.scaleX = graphicScale;
 		backingBar.scaleY = graphicScale;
-		backingBar.smoothing = ClientPrefs.globalAntialiasing;
+		backingBar.antialiasing = ClientPrefs.globalAntialiasing;
 		addChild(backingBar);
 		backingBar.alpha = 0.4;
 		
@@ -63,7 +63,7 @@ class FunkinSoundTray extends FlxSoundTray
 			bar.y = 5;
 			bar.scaleX = graphicScale;
 			bar.scaleY = graphicScale;
-			bar.smoothing = ClientPrefs.globalAntialiasing;
+			bar.antialiasing = ClientPrefs.globalAntialiasing;
 			addChild(bar);
 			_bars.push(bar);
 		}
@@ -115,11 +115,11 @@ class FunkinSoundTray extends FlxSoundTray
 	function checkAntialiasing()
 	{
 		// Apply anti-aliasing according to the Psych save file
-		if ((cast __children[0] : FlxGraphic).smoothing != ClientPrefs.globalAntialiasing)
+		if ((cast __children[0] : FlxGraphic).antialiasing != ClientPrefs.globalAntialiasing)
 		{
 			for (child in __children)
 			{
-				(cast child : FlxGraphic).smoothing = ClientPrefs.globalAntialiasing;
+				(cast child : FlxGraphic).antialiasing = ClientPrefs.globalAntialiasing;
 			}
 		}
 	}
