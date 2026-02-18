@@ -605,7 +605,7 @@ function onLoad() {
 	}
 
 	unlocked = FlxG.save.data.unlockedHim;
-
+	
 	if (chicken)
 		songs.insert(4, {
 			name: "Bobos Chicken",
@@ -1044,7 +1044,10 @@ function onUpdate(elapsed) {
 				if (curSelected != (indSongs[curSection].length - 1) && FlxG.mouse.overlaps(getSpecificSongBox(curSelected + 1)))
 					changeSelection(getSpecificSongBox(curSelected + 1).ID - curSelected, true);
 				if (curSelected != 0 && FlxG.mouse.overlaps(getSpecificSongBox(curSelected - 1)))
-					changeSelection(getSpecificSongBox(curSelected - 1).ID - curSelected, true);
+					changeSelection(getSpecificSongBox(curSelected - 1).ID - curSelected, true);			
+				if (titles[curSection] == 'BONUS')
+					if (!FlxG.save.data.execution && FlxG.mouse.overlaps(sprDifficulty))
+						unlockExecution();
 			}
 		}
 
@@ -1108,6 +1111,34 @@ function checkSongAhead()
 				break;
 			}
 		}
+	}
+}
+
+function unlockExecution() {
+	if (!FlxG.save.data.execution && indSongs[1][indSongs[1].length - 1][0] != 'execution') {
+		canSelect = false;
+
+		var data = {
+			name: "Execution",
+			icon: "lordx",
+			section: "BONUS",
+			bpm: 150,
+			label: "Execution"
+		};
+
+		var casette = makeCasette(data);
+
+		songs.insert(executionIndex, data);
+		indSongs[1].push(['execution', 150]);
+		indSongData[1].push(data);
+		cassettesBonus.add(casette);
+		casette.ID = cassettesBonus.members.length - 1;
+
+		FlxG.save.data.execution = true;
+		FlxG.save.flush();
+
+		canSelect = true;
+		curSelected = getCurrentSectionGrp().length - 1;
 	}
 }
 

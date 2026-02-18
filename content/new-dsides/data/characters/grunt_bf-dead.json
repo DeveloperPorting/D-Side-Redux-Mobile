@@ -41,7 +41,7 @@
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters\\BF/GruntBF_GAMEOVER",
+	"image": "characters/BF/GruntBF_GAMEOVER",
 	"position": [
 		-280,
 		270
