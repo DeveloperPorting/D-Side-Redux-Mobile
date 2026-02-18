@@ -57,7 +57,7 @@
     <assets path="assets/mobile"/>
     <assets path="modsList.txt"/>
 
-    <assets path='assets/content' embed='false' if="MODS_ALLOWED"/>
+    <assets path="assets/content" if="android" />
 
     <!--OpenAL config-->    <!-- appreciate you cyn0x8 and smokey for finding this -->
     <section if="desktop">

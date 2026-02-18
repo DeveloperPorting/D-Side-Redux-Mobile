@@ -218,160 +218,173 @@ class Mods
 	
 	public static function getPack(?folder:String):Null<ModMeta>
 	{
-		#if MODS_ALLOWED
-		if (folder == null) folder = Mods.currentModDirectory;
+		if (folder == null)
+		{
+			folder = Paths.activeModFolders[0];
+		}
 		
-		var path:String = MODS_DIRECTORY + '/' + 'new-dsides/meta.json';
+		var path = Paths.mods(folder + '/meta.json');
 		if (FunkinAssets.exists(path))
 		{
 			final raw = FunkinAssets.getContent(path);
 			if (raw != null && raw.length > 0)
 			{
-				final json:Null<ModMeta> = FunkinAssets.parseJson5(raw);
-				if (json != null) return json;
+				return FunkinAssets.parseJson5(raw);
 			}
 		}
-		#end
 		return null;
 	}
+
+public static inline function parseList():ModsList
+{
+    var list:ModsList = {enabled: [], disabled: [], all: []};
+    
+    // Percorre a lista que definimos no Paths
+    for (modName in Paths.activeModFolders)
+    {
+        // Adicionamos diretamente. Se a pasta não existir, 
+        // o motor simplesmente não vai achar ficheiros lá dentro, mas não quebra.
+        list.all.push(modName);
+        list.enabled.push(modName);
+        
+        trace('Mod injetado na lista ativa: ' + modName);
+    }
+    
+    return list;
+}
+
+#if MODS_ALLOWED
+public static function getListAsArray(?top:String = ''):Array<{folder:String, enabled:Bool}>
+{
+	var list:Array<{folder:String, enabled:Bool}> = [];
+	var added:Array<String> = [];
 	
-	public static inline function parseList():ModsList
+	var meusMods:Array<String> = ['new-dsides', 'old-dsides'];
+	
+	for (modName in meusMods)
 	{
-		var list:ModsList = {enabled: [], disabled: [], all: []};
-		
-		var modName:String = 'new-dsides';
-		
-		list.all.push(modName);
-		list.enabled.push(modName);
-		
-		return list;
+		// Verifica se a pasta existe em assets/content/
+		var path = Paths.MODS_DIRECTORY + '/' + modName;
+		if (FunkinAssets.exists(path) && !added.contains(modName))
+		{
+			added.push(modName);
+			list.push({folder: modName, enabled: true}); // 'true' para vir ativado por padrão
+		}
 	}
 	
+	return list;
+}
+#end
+
+public static function updateModList(top:String = '')
+{
 	#if MODS_ALLOWED
-	public static function getListAsArray(?top:String = ''):Array<{folder:String, enabled:Bool}>
+	ensureModsListExists();
+	// Find all that are already ordered
+	var list = getListAsArray();
+	
+	// Now save file
+	
+/*	var fileStr:String = '';
+	for (values in list)
 	{
-		var list:Array<{folder:String, enabled:Bool}> = [];
-		
-		var modName:String = 'new-dsides';
-		
-		if (FunkinAssets.exists(MODS_DIRECTORY + '/' + modName))
-		{
-			list.push({folder: modName, enabled: true});
-		}
-		
-		return list;
+		if (fileStr.length > 0) fileStr += '\n';
+		fileStr += values.folder + '|' + (values.enabled ? '1' : '0');
 	}
+	File.saveContent('modsList.txt', fileStr);*/
 	#end
+}
+
+public static function loadTopMod()
+{
+	currentModDirectory = '';
+	#if MODS_ALLOWED
+	var list:Array<String> = Mods.parseList().enabled;
+	if (list != null && list[0] != null) Mods.currentModDirectory = list[0];
+	applyModConfig();
+	#end
+}
+
+public static function applyModConfig(?directory:String):Void
+{
+	var pack = getPack(directory);
+	if (pack == null) return;
 	
-	public static function updateModList(top:String = '')
+	currentModConfig = pack;
+	
+	WindowUtil.setTitle(pack.windowTitle ?? 'Friday Night Funkin');
+	
+	inline function resetIcon()
 	{
-		#if MODS_ALLOWED
-		ensureModsListExists();
-		// Find all that are already ordered
-		var list = getListAsArray();
+		final path = Paths.getPath('images/branding/icon/icon64.png', null, true);
 		
-		// Now save file
-		
-		var fileStr:String = '';
-		for (values in list)
-		{
-			if (fileStr.length > 0) fileStr += '\n';
-			fileStr += values.folder + '|' + (values.enabled ? '1' : '0');
-		}
-		File.saveContent('modsList.txt', fileStr);
-		#end
+		FlxG.stage.window.setIcon(Image.fromBytes(FunkinAssets.getBytes(path)));
 	}
 	
-	public static function loadTopMod()
+	if (pack.iconFile != null)
 	{
-		currentModDirectory = '';
-		#if MODS_ALLOWED
-		var list:Array<String> = Mods.parseList().enabled;
-		if (list != null && list[0] != null) Mods.currentModDirectory = list[0];
-		applyModConfig();
-		#end
-	}
-	
-	public static function applyModConfig(?directory:String):Void
-	{
-		var pack = getPack(directory);
-		if (pack == null) return;
+		final path = Paths.getPath('images/${pack.iconFile}.png', null, true);
 		
-		currentModConfig = pack;
-		
-		WindowUtil.setTitle(pack.windowTitle ?? 'Friday Night Funkin');
-		
-		inline function resetIcon()
-		{
-			final path = Paths.getPath('images/branding/icon/icon64.png', null, true);
-			
-			FlxG.stage.window.setIcon(Image.fromBytes(FunkinAssets.getBytes(path)));
-		}
-		
-		if (pack.iconFile != null)
-		{
-			final path = Paths.getPath('images/${pack.iconFile}.png', null, true);
-			
-			if (FunkinAssets.exists(path)) FlxG.stage.window.setIcon(Image.fromBytes(FunkinAssets.getBytes(path)));
-			else
-			{
-				resetIcon();
-				Logger.log('Could not find Icon ${pack.iconFile}', ERROR);
-			}
-		}
-		else resetIcon();
-		
-		if (pack.defaultTransition != null)
-		{
-			switch (pack.defaultTransition.toLowerCase())
-			{
-				case 'base', 'swipe':
-					MusicBeatState.transitionInState = SwipeTransition;
-					MusicBeatState.transitionOutState = SwipeTransition;
-				case 'fade':
-					MusicBeatState.transitionInState = FadeTransition;
-					MusicBeatState.transitionOutState = FadeTransition;
-				default:
-					ScriptedTransition.setTransition(pack.defaultTransition);
-			}
-		}
+		if (FunkinAssets.exists(path)) FlxG.stage.window.setIcon(Image.fromBytes(FunkinAssets.getBytes(path)));
 		else
 		{
-			MusicBeatState.transitionInState = SwipeTransition;
-			MusicBeatState.transitionOutState = SwipeTransition;
+			resetIcon();
+			Logger.log('Could not find Icon ${pack.iconFile}', ERROR);
 		}
-		
-		if (pack.discordClientID != null) funkin.api.DiscordClient.rpcId = pack.discordClientID;
-		else funkin.api.DiscordClient.rpcId = DiscordClient.NMV_ID;
-		
-		Paths.DEFAULT_FONT = pack.defaultFont != null && FunkinAssets.exists(Paths.font(pack.defaultFont)) ? Paths.font(pack.defaultFont) : Paths.font('vcr.ttf');
+	}
+	else resetIcon();
+	
+	if (pack.defaultTransition != null)
+	{
+		switch (pack.defaultTransition.toLowerCase())
+		{
+			case 'base', 'swipe':
+				MusicBeatState.transitionInState = SwipeTransition;
+				MusicBeatState.transitionOutState = SwipeTransition;
+			case 'fade':
+				MusicBeatState.transitionInState = FadeTransition;
+				MusicBeatState.transitionOutState = FadeTransition;
+			default:
+				ScriptedTransition.setTransition(pack.defaultTransition);
+		}
+	}
+	else
+	{
+		MusicBeatState.transitionInState = SwipeTransition;
+		MusicBeatState.transitionOutState = SwipeTransition;
 	}
 	
-	public static function getModIcon(mod:String):String
-	{
-		if (mod.length < 1) mod = currentModDirectory;
-		var retVal = 'branding/icon/fallback';
-		var pack = getPack(mod);
-		if (pack != null && pack.iconFile != null) retVal = pack.iconFile;
-		return retVal;
-	}
+	if (pack.discordClientID != null) funkin.api.DiscordClient.rpcId = pack.discordClientID;
+	else funkin.api.DiscordClient.rpcId = DiscordClient.NMV_ID;
 	
-	public static function getModName(mod:String):String
-	{
-		if (mod.length < 1) mod = currentModDirectory;
-		var retVal = mod;
-		var pack = getPack(mod);
-		if (pack != null && pack.name != null) retVal = pack.name;
-		return retVal;
-	}
-	
-	public static function getModFont(mod:String):String
-	{
-		if (mod.length < 1) mod = currentModDirectory;
-		var retVal = Paths.font('vcr.ttf');
-		var pack = getPack(mod);
-		if (pack != null && pack.defaultFont != null) retVal = Paths.font(pack.defaultFont);
-		trace(retVal);
-		return retVal;
-	}
+	Paths.DEFAULT_FONT = pack.defaultFont != null && FunkinAssets.exists(Paths.font(pack.defaultFont)) ? Paths.font(pack.defaultFont) : Paths.font('vcr.ttf');
+}
+
+public static function getModIcon(mod:String):String
+{
+	if (mod.length < 1) mod = currentModDirectory;
+	var retVal = 'branding/icon/fallback';
+	var pack = getPack(mod);
+	if (pack != null && pack.iconFile != null) retVal = pack.iconFile;
+	return retVal;
+}
+
+public static function getModName(mod:String):String
+{
+	if (mod.length < 1) mod = currentModDirectory;
+	var retVal = mod;
+	var pack = getPack(mod);
+	if (pack != null && pack.name != null) retVal = pack.name;
+	return retVal;
+}
+
+public static function getModFont(mod:String):String
+{
+	if (mod.length < 1) mod = currentModDirectory;
+	var retVal = Paths.font('vcr.ttf');
+	var pack = getPack(mod);
+	if (pack != null && pack.defaultFont != null) retVal = Paths.font(pack.defaultFont);
+	trace(retVal);
+	return retVal;
+}
 }

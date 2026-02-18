@@ -32,6 +32,8 @@ class Paths
 	 */
 	public static inline final MODS_DIRECTORY = 'assets/content';
 	
+	public static var activeModFolders:Array<String> = ['new-dsides', 'old-dsides'];
+	
 	/**
 	 * Default font used by the game for most things.
 	 * 
@@ -50,22 +52,18 @@ class Paths
 	 * @return The path to the file.
 	 */
 	public static function getPath(file:String, ?parentFolder:String, checkMods:Bool = false):String
-	{
-		if (parentFolder != null) file = '$parentFolder/$file';
-		
-		if (checkMods)
-		{
-			final modPath:String = MODS_DIRECTORY + '/' + 'new-dsides/' + file;
-			if (FunkinAssets.exists(modPath)) return modPath;
-		}
-		
-		#if ASSET_REDIRECT
-		final embedPath = getCorePath().replace(CORE_DIRECTORY, trail + 'assets/embeds') + file;
-		if (FunkinAssets.exists(embedPath)) return embedPath;
-		#end
-		
-		return getCorePath(file);
-	}
+{
+    if (parentFolder != null) file = '$parentFolder/$file';
+    
+    if (checkMods)
+    {
+        // Esta linha abaixo é a que faz a mágica acontecer
+        final modPath:String = modFolders(file);
+        if (FunkinAssets.exists(modPath)) return modPath;
+    }
+    
+    return getCorePath(file);
+}
 	
 	/**
 	 * Inserts the primary asset path to the given file path
@@ -393,19 +391,21 @@ class Paths
 		
 		if (checkMods)
 		{
-			var path:String = MODS_DIRECTORY + '/' + directory;
-			
-			if (FunkinAssets.exists(path) && !folders.contains(path)) folders.push(path);
+			for (mod in activeModFolders)
+			{
+				var folder = mods(mod + '/' + directory);
+				if (FunkinAssets.exists(folder) && !folders.contains(folder)) folders.push(folder);
+			}
 		}
+		
 		for (folder in folders)
 		{
 			for (file in FunkinAssets.readDirectory(folder))
 			{
-				final path = Path.join([folder, file]);
+				final path = haxe.io.Path.join([folder, file]);
 				if (!files.contains(path)) files.push(path);
 			}
 		}
-		
 		return files;
 	}
 	
@@ -422,19 +422,15 @@ class Paths
 	 * Searches the primary loaded mod path and general mod path for a given file
 	 */
 	public static function modFolders(key:String):String
-	{
-		var myMod:String = 'new-dsides';
-		final modFile:String = mods(myMod + '/' + key);
-		
-		if (FunkinAssets.exists(modFile)) return modFile;
-		
-		if (Mods.currentModDirectory != null && Mods.currentModDirectory.length > 0)
-		{
-			final fileToCheck:String = mods(Mods.currentModDirectory + '/' + key);
-			if (FunkinAssets.exists(fileToCheck)) return fileToCheck;
-		}
-		
-		return mods(key);
-	#end
-	}
+{
+    for (mod in activeModFolders)
+    {
+        var fileToCheck:String = mods(mod + '/' + key);
+        if (FunkinAssets.exists(fileToCheck))
+            return fileToCheck;
+    }
+    return mods(key);
 }
+    #end
+	}
+	
