@@ -39,7 +39,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: DSideRedux-Android
+          name: DSideRedux-Android-NoExternal
           path: export/release/android/bin/app/build/outputs/apk/*
           if-no-files-found: error
 

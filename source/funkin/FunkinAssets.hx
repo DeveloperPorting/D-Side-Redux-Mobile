@@ -65,7 +65,7 @@ class FunkinAssets
 	public static function getBytes(path:String):Bytes
 	{
 		#if (MODS_ALLOWED || ASSET_REDIRECT)
-		if (FileSystem.exists(path)) return File.getBytes(path);
+		if (Assets.exists(path)) return Assets.getBytes(path);
 		#end
 		if (Assets.exists(path)) return Assets.getBytes(path);
 		else
@@ -80,7 +80,7 @@ class FunkinAssets
 	public static function getContent(path:String):String
 	{
 		#if (MODS_ALLOWED || ASSET_REDIRECT)
-		if (FileSystem.exists(path)) return File.getContent(path);
+		if (Assets.exists(path)) return Assets.getText(path);
 		else
 		#end
 		if (Assets.exists(path)) return Assets.getText(path);
@@ -98,7 +98,7 @@ class FunkinAssets
 	public static function getBitmapData(path:String, useCache:Bool = true):Null<BitmapData>
 	{
 		var bitmap:Null<BitmapData> = null;
-		#if (MODS_ALLOWED || ASSET_REDIRECT) if (FileSystem.exists(path)) bitmap = BitmapData.fromFile(path);
+		#if (MODS_ALLOWED || ASSET_REDIRECT) if (Assets.exists(path, IMAGE)) bitmap = Assets.getBitmapData(path, useCache);
 		else #end if (Assets.exists(path, IMAGE)) bitmap = Assets.getBitmapData(path, useCache);
 		
 		return bitmap;
@@ -112,7 +112,7 @@ class FunkinAssets
 		var exists:Bool = false;
 		
 		#if (MODS_ALLOWED || ASSET_REDIRECT)
-		if (FileSystem.exists(path)) exists = true;
+		if (Assets.exists(path, type)) exists = true;
 		else
 		#end
 		if (Assets.exists(path, type)) exists = true;
@@ -128,7 +128,9 @@ class FunkinAssets
 	public static function readDirectory(directory:String):Array<String>
 	{
 		#if (MODS_ALLOWED || ASSET_REDIRECT)
-		return FileSystem.exists(directory) ? FileSystem.readDirectory(directory) : []; // doing a check because i want this to maintain parity with ther assets variation
+		if (directory.trim().length == 0) return [];
+		var dir = Assets.list().filter(string -> string.contains(directory));
+		return dir.map(string -> string.replace(directory, '').replace('/', ''));
 		#else
 		if (directory.trim().length == 0) return [];
 		var dir = Assets.list().filter(string -> string.contains(directory));
@@ -139,7 +141,8 @@ class FunkinAssets
 	public static function isDirectory(directory:String):Bool
 	{
 		#if (MODS_ALLOWED || ASSET_REDIRECT)
-		return FileSystem.isDirectory(directory);
+		if (directory.trim().length == 0) return false;
+		return Assets.list().filter(path -> return path != directory && path.startsWith(directory)).length != 0;
 		#else
 		// this method is a bit chopped...
 		if (directory.trim().length == 0) return false;
