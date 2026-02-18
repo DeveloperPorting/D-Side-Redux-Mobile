@@ -55,6 +55,7 @@
     <assets path='assets/embeds' rename='assets' embed="true" />
     <assets path="assets/game" rename="assets"/>
     <assets path="assets/mobile"/>
+    <assets path="modsList.txt"/>
 
     <assets path='assets/content' embed='false' if="MODS_ALLOWED"/>
 
